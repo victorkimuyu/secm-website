@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SECM Valuers</title>
+    <meta name="description"
+        content="Learn about SECM Valuers, our history, mission, vision, and the expert team behind our professional valuation services.">
+    <link href="./static/css/output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-brand-pink">SECM</span>
+                        <span class="text-2xl font-light text-gray-600 ml-1">Valuers</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">Home</a>
+                    <a href="about_us.html"
+                        class="text-brand-pink font-semibold border-b-2 border-brand-pink px-1 pt-1">About Us</a>
+                    <a href="services.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">Services</a>
+                    <a href="clients.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">Clients</a>
+                    <a href="contact_us.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">Contact Us</a>
+                    <a href="contact_us.html"
+                        class="bg-brand-pink text-white px-5 py-2 rounded-full hover:bg-pink-800 transition-colors shadow-md">Get
+                        a Quote</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-pink"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg x-show="!mobileMenuOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg x-show="mobileMenuOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden" id="mobile-menu" x-show="mobileMenuOpen"
+            x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2"
+            x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2">
+            <div class="pt-2 pb-3 space-y-1 px-4 shadow-lg bg-white">
+                <a href="index.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Home</a>
+                <a href="about_us.html"
+                    class="bg-pink-50 border-l-4 border-brand-pink text-brand-pink block pl-3 pr-4 py-2 text-base font-medium">About
+                    Us</a>
+                <a href="services.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Services</a>
+                <a href="clients.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Clients</a>
+                <a href="contact_us.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-gray-900 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">About Us</h1>
+            <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+                Building trust through accurate, reliable, and professional valuation services.
+            </p>
+        </div>
+    </div>
+
+    <!-- Who We Are -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Who We Are</h2>
+                    <p class="mt-3 max-w-3xl text-lg text-gray-500">
+                        Sec & M Co. Ltd is a leading Kenyan-based assets valuation firm. We are fully accredited by the
+                        Institution of Surveyors of Kenya (ISK) and licensed by the Valuers Registration Board (VRB) and
+                        Estate Agents Registration Board (EARB).
+                    </p>
+                    <p class="mt-3 max-w-3xl text-lg text-gray-500">
+                        With over 10 years of active presence in the Real Estate Industry, we have offices in Nairobi,
+                        Mombasa, and Nakuru. Our firm is 100% locally owned and brings together a group of experts with
+                        vast experience in property valuations, feasibility studies, and management consultancy.
+                    </p>
+                    <div class="mt-8 sm:flex">
+                        <div class="rounded-md shadow">
+                            <a href="contact_us.html"
+                                class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-pink hover:bg-pink-800 transition-colors">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 lg:mt-0">
+                    <div class="bg-gray-50 rounded-lg px-6 py-8 sm:p-10 lg:p-12 shadow-inner">
+                        <h3 class="text-2xl font-extrabold text-gray-900">Our Core Values</h3>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-brand-pink" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700"><strong>Integrity:</strong> Unbiased and honest
+                                    reporting.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-brand-pink" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700"><strong>Professionalism:</strong> Adhering to
+                                    international standards (IVS, RICS).</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-brand-pink" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700"><strong>Reliability:</strong> Timely and
+                                    accurate service delivery.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Team</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Led by seasoned industry professionals with a broad spectrum of valuation expertise.
+                </p>
+            </div>
+            <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Team Member 1 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div
+                                class="h-12 w-12 rounded-full bg-brand-orange flex items-center justify-center text-white font-bold text-xl">
+                                HK</div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Valuer H. M. Kaburu</h3>
+                                <p class="text-sm text-brand-pink">Director / Lead Valuer</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-500">
+                            <p>Masters in Valuation & Property Management (UoN). Registered Valuer (No. 405). Member of
+                                ISK (MISK). Candidate member RICS. Wide experience with public and private blue-chip
+                                institutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div
+                                class="h-12 w-12 rounded-full bg-brand-orange flex items-center justify-center text-white font-bold text-xl">
+                                JK</div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Prof Eng. John M. Kihiu</h3>
+                                <p class="text-sm text-brand-pink">Consulting Engineer / Valuer</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-500">
+                            <p>Member of RICS (MRICS), FIEK. Licensed Chartered Machinery Valuation Surveyor. Extensive
+                                training in Machinery and Equipment Valuation in the USA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div
+                                class="h-12 w-12 rounded-full bg-brand-orange flex items-center justify-center text-white font-bold text-xl">
+                                NN</div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Valuer Nicky Munyaka Nzioki</h3>
+                                <p class="text-sm text-brand-pink">Senior Valuer / Consultant</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-500">
+                            <p>MSc in Building Maintenance Management (UK). Registered Valuation Surveyor. NEMA Lead
+                                Expert. Senior Lecturer at University of Nairobi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div
+                                class="h-12 w-12 rounded-full bg-brand-orange flex items-center justify-center text-white font-bold text-xl">
+                                LW</div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Valuer Lawrence Waititu Muchiri</h3>
+                                <p class="text-sm text-brand-pink">Valuer</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-500">
+                            <p>MSc from University of Reading (UK). Member of ISK. Member of Valuers Registration Board
+                                and Land Acquisition Appeals Tribunal.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white">SECM Valuers</a>
+                    <p class="text-gray-400 text-base">
+                        To be the preferred complex Valuations Services Provider in Africa and beyond.
+                    </p>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Services</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="services.html" class="text-base text-gray-300 hover:text-white">Commercial
+                                        Valuation</a></li>
+                                <li><a href="services.html" class="text-base text-gray-300 hover:text-white">Plant &
+                                        Machinery</a></li>
+                                <li><a href="services.html" class="text-base text-gray-300 hover:text-white">Residential
+                                        Valuation</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="about_us.html" class="text-base text-gray-300 hover:text-white">About
+                                        Us</a></li>
+                                <li><a href="clients.html" class="text-base text-gray-300 hover:text-white">Our
+                                        Clients</a></li>
+                                <li><a href="contact_us.html" class="text-base text-gray-300 hover:text-white">Contact
+                                        Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li class="flex items-start">
+                                    <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <span class="ml-3 text-base text-gray-300">Woodland Business Park, Upper Hill,
+                                        Nairobi</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <span class="ml-3 text-base text-gray-300">(254) 725 969 290</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 xl:text-center">
+                    &copy; 2025 SECM Valuers Co. Ltd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

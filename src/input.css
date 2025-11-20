@@ -1,1 +1,9 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+@theme {
+    --font-sans: "Lab Grotesque", sans-serif;
+    --color-brand-pink: #8c1579;
+    --color-brand-orange: #f78120;
+}

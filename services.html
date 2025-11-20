@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SECM Valuers</title>
+    <meta name="description"
+        content="Comprehensive valuation services including Commercial, Industrial, Agricultural, Plant & Machinery, and Consultancy.">
+    <link href="./static/css/output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-brand-pink">SECM</span>
+                        <span class="text-2xl font-light text-gray-600 ml-1">Valuers</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">Home</a>
+                    <a href="about_us.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">About Us</a>
+                    <a href="services.html"
+                        class="text-brand-pink font-semibold border-b-2 border-brand-pink px-1 pt-1">Services</a>
+                    <a href="clients.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">Clients</a>
+                    <a href="contact_us.html"
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 pt-1">Contact Us</a>
+                    <a href="contact_us.html"
+                        class="bg-brand-pink text-white px-5 py-2 rounded-full hover:bg-pink-800 transition-colors shadow-md">Get
+                        a Quote</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-pink"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg x-show="!mobileMenuOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg x-show="mobileMenuOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden" id="mobile-menu" x-show="mobileMenuOpen"
+            x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-2"
+            x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2">
+            <div class="pt-2 pb-3 space-y-1 px-4 shadow-lg bg-white">
+                <a href="index.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Home</a>
+                <a href="about_us.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">About
+                    Us</a>
+                <a href="services.html"
+                    class="bg-pink-50 border-l-4 border-brand-pink text-brand-pink block pl-3 pr-4 py-2 text-base font-medium">Services</a>
+                <a href="clients.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Clients</a>
+                <a href="contact_us.html"
+                    class="border-l-4 border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-gray-900 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Our Services</h1>
+            <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+                Valuations, Valuations, Valuations! We provide accurate and comprehensive valuation services for all
+                asset types.
+            </p>
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-brand-pink font-semibold tracking-wide uppercase">Line of Business</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Why Valuation Matters
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Valuation is critical for sound investment decisions, financial reporting, insurance, taxation, and
+                    more. Whether statutory or non-statutory, we ensure our calculations reflect real-life market
+                    conditions and legal requirements.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900">Core Valuation Services</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Commercial -->
+                <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900 flex items-center">
+                            <span class="bg-brand-orange text-white p-2 rounded-full mr-3">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </span>
+                            Commercial Properties
+                        </h3>
+                        <p class="mt-2 text-base text-gray-500">Office buildings, retail shopping centers, and
+                            complexes.</p>
+                    </div>
+                </div>
+
+                <!-- Industrial -->
+                <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900 flex items-center">
+                            <span class="bg-brand-orange text-white p-2 rounded-full mr-3">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </span>
+                            Industrial Properties
+                        </h3>
+                        <p class="mt-2 text-base text-gray-500">Large scale factories, warehouses, and industrial
+                            estates.</p>
+                    </div>
+                </div>
+
+                <!-- Agricultural -->
+                <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900 flex items-center">
+                            <span class="bg-brand-orange text-white p-2 rounded-full mr-3">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </span>
+                            Agricultural Properties
+                        </h3>
+                        <p class="mt-2 text-base text-gray-500">Ranches, holding grounds, large farms, and agricultural
+                            land.</p>
+                    </div>
+                </div>
+
+                <!-- Plant & Machinery -->
+                <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900 flex items-center">
+                            <span class="bg-brand-orange text-white p-2 rounded-full mr-3">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </span>
+                            Plant & Machinery
+                        </h3>
+                        <p class="mt-2 text-base text-gray-500">High-tech factories, power plants, sugar mills, and
+                            automobile plants.</p>
+                    </div>
+                </div>
+
+                <!-- Special Properties -->
+                <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900 flex items-center">
+                            <span class="bg-brand-orange text-white p-2 rounded-full mr-3">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </span>
+                            Special Properties
+                        </h3>
+                        <p class="mt-2 text-base text-gray-500">Hotels, game reserves, golf courses, hospitals, schools,
+                            and petrol stations.</p>
+                    </div>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-gray-900 flex items-center">
+                            <span class="bg-brand-orange text-white p-2 rounded-full mr-3">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </span>
+                            Infrastructural Assets
+                        </h3>
+                        <p class="mt-2 text-base text-gray-500">Water reticulation systems, roads, and civil works.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Value Added Services -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900">Consultancy & Value-Added Services</h2>
+                    <p class="mt-4 text-lg text-gray-500">
+                        Beyond standard valuation reports, we offer strategic advice to help you maximize asset
+                        potential.
+                    </p>
+                    <ul class="mt-8 space-y-3">
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="ml-3 text-base text-gray-700">Due Diligence & Feasibility Studies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="ml-3 text-base text-gray-700">Public Valuation Prospectuses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="ml-3 text-base text-gray-700">Mergers, Acquisitions, and Liquidations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="ml-3 text-base text-gray-700">Investment Advisory & Financial
+                                Restructuring</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-10 lg:mt-0">
+                    <div class="bg-brand-pink rounded-lg shadow-xl overflow-hidden">
+                        <div class="px-6 py-8 sm:p-10">
+                            <h3 class="text-2xl font-extrabold text-white">Ready to get started?</h3>
+                            <p class="mt-4 text-lg text-pink-100">
+                                Contact us today for a comprehensive valuation of your assets.
+                            </p>
+                            <div class="mt-8">
+                                <a href="contact_us.html"
+                                    class="block w-full bg-white border border-transparent rounded-md shadow px-5 py-3 text-base font-medium text-brand-pink text-center hover:bg-gray-50 sm:inline-block sm:w-auto">
+                                    Request a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white">SECM Valuers</a>
+                    <p class="text-gray-400 text-base">
+                        To be the preferred complex Valuations Services Provider in Africa and beyond.
+                    </p>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Services</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="services.html" class="text-base text-gray-300 hover:text-white">Commercial
+                                        Valuation</a></li>
+                                <li><a href="services.html" class="text-base text-gray-300 hover:text-white">Plant &
+                                        Machinery</a></li>
+                                <li><a href="services.html" class="text-base text-gray-300 hover:text-white">Residential
+                                        Valuation</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="about_us.html" class="text-base text-gray-300 hover:text-white">About
+                                        Us</a></li>
+                                <li><a href="clients.html" class="text-base text-gray-300 hover:text-white">Our
+                                        Clients</a></li>
+                                <li><a href="contact_us.html" class="text-base text-gray-300 hover:text-white">Contact
+                                        Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li class="flex items-start">
+                                    <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <span class="ml-3 text-base text-gray-300">Woodland Business Park, Upper Hill,
+                                        Nairobi</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <span class="ml-3 text-base text-gray-300">(254) 725 969 290</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 xl:text-center">
+                    &copy; 2025 SECM Valuers Co. Ltd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
