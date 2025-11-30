@@ -1,9 +1,14 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@font-face {
+    font-family: "Sherpa";
+    src: url('../fonts/Sherpa/Sherpa.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+}
 
 @theme {
-    --font-sans: "Lab Grotesque", sans-serif;
-    --color-brand-pink: #8c1579;
-    --color-brand-orange: #f78120;
+    --font-sans: "Sherpa", sans-serif;
+    --color-brand-pink: #be185d;
+    --color-brand-orange: #fdba74;
 }
