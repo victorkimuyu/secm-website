@@ -9,6 +9,57 @@
     <link href="./static/css/global.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        @keyframes heroImageFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0.1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes heroImageZoomIn {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes heroTextFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-image-animate {
+            animation: heroImageFadeIn 2s ease-out forwards,
+                       heroImageZoomIn 40s ease-in-out infinite;
+            animation-delay: 0s, 2s;
+        }
+
+        .hero-text-animate {
+            animation: heroTextFadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .hero-text-animate-delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .hero-text-animate-delay-2 {
+            animation-delay: 0.4s;
+        }
+    </style>
 </head>
 
 <body class="font-sans text-gray-800 antialiased bg-gray-50">
@@ -89,21 +140,21 @@
     <!-- Hero Section -->
     <div class="relative bg-gray-900 overflow-hidden border-t border-t-brand-pink">
         <div class="absolute inset-0">
-            <img class="w-full h-full object-cover opacity-10"
+            <img class="w-full h-full object-cover opacity-10 hero-image-animate"
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
                 alt="Modern building architecture">
             <div class="absolute inset-0 bg-linaer-to-r from-gray-900 to-transparent"></div>
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
-            <h1 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl hero-text-animate">
                 Asset Valuation Experts & Consultants
             </h1>
-            <p class="mt-6 text-lg text-gray-300 max-w-3xl">
+            <p class="mt-6 text-lg text-gray-300 max-w-3xl hero-text-animate hero-text-animate-delay-1">
                 An unrivalled depth of understanding in Valuations. We provide unbiased, reliable, and credible
                 valuation services across Africa and beyond.
             </p>
             <a href="services.html"
-                class="inline-flex gap-3 items-center justify-center py-4 text-xs  font-medium rounded-full text-white hover:bg-brand-pink hover:text-white md:py-4 md:text-lg px-0 hover:md:px-6 mt-10 transition-all">
+                class="inline-flex gap-3 items-center justify-center py-4 text-xs  font-medium rounded-full text-white hover:bg-brand-pink hover:text-white md:py-4 md:text-lg px-0 hover:md:px-6 mt-10 transition-all duration-500 hero-text-animate hero-text-animate-delay-2">
                 Our Services
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-6 pt-1">
                     <path fill-rule="evenodd"
