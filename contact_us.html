@@ -16,24 +16,23 @@
     <!-- Navigation -->
     <nav class="shadow-md sticky top-0 left-0 z-10 bg-white/80" x-data="{ mobileMenuOpen: false }">
         <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between">
+            <div class="flex items-center justify-between">
                 <a href="index.html">
                     <img src="./static/images/secm-logo.png" alt="SEC&M Valuers Logo">
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html"
-                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-4">HOME</a>
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-6">HOME</a>
                     <a href="about_us.html"
-                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-4">ABOUT
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-6">ABOUT
                         US</a>
                     <a href="services.html"
-                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-4">SERVICES</a>
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-6">SERVICES</a>
                     <a href="clients.html"
-                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-4">CLIENTS</A>
+                        class="text-gray-600 hover:text-brand-pink transition-colors px-1 text-sm tracking-wide py-6">CLIENTS</A>
                     <a href="contact_us.html"
-                        class="flex items-center gap-3 bg-brand-pink text-white font-medium px-5 py-2 h-full transition-colors">
-                        <span class="">Get
-                            a Quote</span>
+                        class="flex items-center gap-3 bg-brand-pink text-white font-medium px-5 py-2 py-3 transition-colors">
+                        <span class="">Get in touch</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-5">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -88,10 +87,10 @@
 
     <!-- Header -->
     <div class="bg-gray-900 py-16 sm:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Contact Us</h1>
-            <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-                We'd love to hear from you. Get in touch for a quote or consultation.
+        <div class="flex flex-col gap-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-medium text-white sm:text-4xl lg:text-5xl">Get in touch!</h1>
+            <p class="text-xl text-gray-300 max-w-3xl">
+                We would love to hear from you! Get in touch for any inquiries or to schedule an appointment.
             </p>
         </div>
     </div>
@@ -103,11 +102,7 @@
 
                 <!-- Contact Info -->
                 <div>
-                    <h2 class="text-2xl font-extrabold text-gray-900">Get in Touch</h2>
-                    <p class="mt-4 text-lg text-gray-500">
-                        Our team is ready to assist you with all your valuation needs. Reach out to us via phone, email,
-                        or visit our offices.
-                    </p>
+                    <h2 class="text-2xl font-extrabold text-gray-900">Address</h2>
 
                     <div class="mt-8 space-y-6">
                         <div class="flex">
@@ -158,35 +153,35 @@
 
                 <!-- Contact Form -->
                 <div class="mt-12 lg:mt-0">
-                    <div class="bg-gray-50 rounded-lg shadow-lg p-6 sm:p-10">
+                    <div class="bg-gray-50/60 rounded-lg shadow-sm border border-slate-200 p-4 sm:p-6">
                         <h3 class="text-xl font-medium text-gray-900">Send us a message</h3>
                         <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                                 <div class="mt-1">
                                     <input type="text" name="name" id="name" autocomplete="name"
-                                        class="py-3 px-4 block w-full shadow-sm focus:ring-brand-pink focus:border-brand-pink border-gray-300 rounded-md">
+                                        class="py-3 px-4 block w-full border border-slate-200 bg-white shadow-sm focus:ring-brand-pink focus:border-brand-pink border-gray-300 rounded-md">
                                 </div>
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                                 <div class="mt-1">
                                     <input type="email" name="email" id="email" autocomplete="email"
-                                        class="py-3 px-4 block w-full shadow-sm focus:ring-brand-pink focus:border-brand-pink border-gray-300 rounded-md">
+                                        class="py-3 px-4 block w-full border border-slate-200 bg-white shadow-sm focus:ring-brand-pink focus:border-brand-pink border-gray-300 rounded-md">
                                 </div>
                             </div>
                             <div>
                                 <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
                                 <div class="mt-1">
                                     <input type="text" name="phone" id="phone" autocomplete="tel"
-                                        class="py-3 px-4 block w-full shadow-sm focus:ring-brand-pink focus:border-brand-pink border-gray-300 rounded-md">
+                                        class="py-3 px-4 block w-full border border-slate-200 bg-white shadow-sm focus:ring-brand-pink focus:border-brand-pink border-gray-300 rounded-md">
                                 </div>
                             </div>
                             <div>
                                 <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                                 <div class="mt-1">
                                     <textarea id="message" name="message" rows="4"
-                                        class="py-3 px-4 block w-full shadow-sm focus:ring-brand-pink focus:border-brand-pink border border-gray-300 rounded-md"></textarea>
+                                        class="py-3 px-4 block w-full border border-slate-200 bg-white shadow-sm focus:ring-brand-pink focus:border-brand-pink border border-gray-300 rounded-md"></textarea>
                                 </div>
                             </div>
                             <div>
@@ -207,7 +202,7 @@
     <div class="h-96 w-full bg-gray-300">
         <!-- Placeholder for Google Map -->
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8166666666666!2d36.81666666666666!3d-1.2833333333333332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMDAuMCJTIDM2wrA0OScwMC4wIkU!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.393879846645!2d36.82261087577376!3d-1.3022884731396673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10e334a3423d%3A0x60750d4cd0f56e4f!2sWoodland%20Business%20Park!5e0!3m2!1sen!2ske!4v1764582575849!5m2!1sen!2ske"
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <!-- Footer -->

@@ -9,6 +9,7 @@
 
 @theme {
     --font-sans: "Sherpa", sans-serif;
+    --font-jakarta: "Plus Jakarta Sans", sans-serif;
     --color-brand-pink: #be185d;
     --color-brand-orange: #fdba74;
 }
