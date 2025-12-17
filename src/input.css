@@ -2,6 +2,11 @@
 @import "../static/css/fonts.css";
 
 @theme {
-    --font-sans: Sherpa, "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* Brand Colors */
+    --color-brand-pink: #be185d; /* pink-700 hex approximate, tailwind pink-700 is #be185d */
+    --color-brand-orange-light: #fdba74; /* orange-300 hex */
+    --color-brand-orange-dark: #f97316; /* orange-500 hex */
+    
+    /* Font Families */
+    --font-sans: Sherpa, "ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
