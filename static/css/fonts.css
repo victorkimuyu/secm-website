@@ -46,3 +46,73 @@
     font-weight: 900;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-RegularItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecklessNueue';
+    src: url('../fonts/RecklessNueue/RecklessNeue-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LabG-Mono';
+    src: url('../fonts/LabGrotesqueMono/LabGrotesqueMono.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}

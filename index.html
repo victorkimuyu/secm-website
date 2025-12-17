@@ -7,32 +7,37 @@
     <title>SEC & M Valuers</title>
     <link rel="icon" type="image/x-icon" href="favicon.svg">
     <link rel="stylesheet" href="./static/css/global.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 </head>
 
-<body>
+<body class="min-h-[1000px]">
 
     <!-- Navigation -->
     <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 ease-in-out text-white bg-transparent">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0 font-bold text-2xl tracking-wider">
-                    SEC & M
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between py-3 font-mono tracking-wide">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <!-- Logo: Managed by JS -->
+                        <img id="nav-logo" src="./static/images/secm-logo-white.svg" alt="SEC & M Valuers"
+                            class="h-7 md:h-8 w-auto transition-opacity duration-300">
+                    </a>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
+                    <div class="ml-10 flex items-baseline space-x-6">
                         <a href="index.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-brand-orange-light transition-colors">Home</a>
+                            class="px-3 py-2 text-sm font-medium text-[14px] tracking-wide hover:text-pink-600 transition-colors">HOME</a>
                         <a href="about_us.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-brand-orange-light transition-colors">About
-                            Us</a>
+                            class="px-3 py-2 text-sm font-medium text-[14px] tracking-wide hover:text-pink-600 transition-colors">ABOUT
+                            US</a>
                         <a href="services.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-brand-orange-light transition-colors">Services</a>
+                            class="px-3 py-2 text-sm font-medium text-[14px] tracking-wide hover:text-pink-600 transition-colors">SERVICES</a>
                         <a href="clients.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-brand-orange-light transition-colors">Our
-                            Clients</a>
+                            class="px-3 py-2 text-sm font-medium text-[14px] tracking-wider hover:text-pink-600 transition-colors">OUR
+                            CLIENTS</a>
                         <a href="contact_us.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium bg-brand-orange-dark text-white hover:bg-brand-pink transition-colors">Contact
-                            Us</a>
+                            class="px-5 py-3 text-[14px] font-semibold tracking-wider rounded-full bg-white text-pink-700 hover:bg-pink-700 hover:text-white transition-colors font-sans">GET
+                            IN TOUCH</a>
                     </div>
                 </div>
             </div>
@@ -41,62 +46,98 @@
 
     <!-- Hero Section -->
     <header
-        class="relative w-full h-screen flex flex-col justify-center items-center text-center text-white overflow-hidden">
+        class="relative w-full h-[90vh] flex flex-col justify-center items-center text-center text-white overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <!-- Placeholder for premium architectural image - using a solid color gradient for now until image is sourced or using a generic impressive one if available -->
-            <!-- Ideally this would be: <img src="path/to/hero.jpg" class="w-full h-full object-cover" /> -->
             <div
                 class="w-full h-full bg-slate-900 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center">
-                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="absolute inset-0 bg-indigo-800/70"></div>
             </div>
         </div>
 
         <!-- Hero Content -->
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                SECM & M. <span class="text-brand-orange-light">Valuers</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-200 font-light max-w-2xl mx-auto mb-10">
-                Unmatched technical capacity in Real Estate, Industrial & Specialized Assets Valuation.
-            </p>
+            <h3 class="text-2xl font-serif font-bold md:text-4xl text-white max-w-2xl mx-auto mb-10">
+                Asset Valuation Experts & Consultants
+            </h3>
+
         </div>
 
         <!-- Service Cards (Nested at bottom) -->
         <div class="absolute bottom-0 left-0 w-full z-20 pb-8 md:pb-12 px-4">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 items-stretch">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-5">
 
                 <!-- Card 1: Residential -->
                 <div
-                    class="group bg-white/95 backdrop-blur-sm p-6 hover:bg-brand-pink transition-colors duration-300 cursor-pointer border-t-4 border-transparent hover:border-brand-orange-dark shadow-lg">
-                    <h3 class="text-slate-900 group-hover:text-white text-lg font-bold mb-2 uppercase tracking-wide">
-                        Residential Properties</h3>
-                    <p class="text-slate-600 group-hover:text-white/90 text-sm">Use valuations for apartment blocks,
-                        housing developments, and private estates.</p>
+                    class="flex-1 flex flex-row rounded-md group bg-white backdrop-blur-[5px] hover:bg-brand-pink transition-colors duration-300 cursor-pointer shadow-lg overflow-hidden">
+                    <!-- Thumbnail (35%) -->
+                    <div
+                        class="w-[40%] flex-shrink-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80')] bg-cover bg-center">
+                    </div>
+                    <!-- Content -->
+                    <div class="flex-1 p-4 md:p-5 text-left flex flex-col justify-center">
+                        <h3 class="text-black group-hover:text-white text-sm md:text-base font-bold mb-2 leading-tight">
+                            Residential Properties</h3>
+                        <p class="text-gray-900 group-hover:text-white/90 text-xs md:text-sm line-clamp-3">Apartment
+                            blocks, housing developments, and private estates.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
                 </div>
 
                 <!-- Card 2: Commercial -->
                 <div
-                    class="group bg-white/95 backdrop-blur-sm p-6 hover:bg-brand-pink transition-colors duration-300 cursor-pointer border-t-4 border-transparent hover:border-brand-orange-dark shadow-lg">
-                    <h3 class="text-slate-900 group-hover:text-white text-lg font-bold mb-2 uppercase tracking-wide">
-                        Commercial Properties</h3>
-                    <p class="text-slate-600 group-hover:text-white/90 text-sm">Valuations for office buildings, retail
-                        shopping centers, and complexes.</p>
+                    class="flex-1 flex flex-row rounded-md group bg-white mix-blend-overlay mix-blend-overlay backdrop-blur-[5px] hover:bg-brand-pink transition-colors duration-300 cursor-pointer shadow-lg overflow-hidden">
+                    <!-- Thumbnail (35%) -->
+                    <div
+                        class="w-[40%] flex-shrink-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center">
+                    </div>
+                    <!-- Content -->
+                    <div class="flex-1 p-4 md:p-5 text-left flex flex-col justify-center">
+                        <h3 class="text-black group-hover:text-white text-sm md:text-base font-bold mb-2 leading-tight">
+                            Commercial Properties</h3>
+                        <p class="text-gray-900 group-hover:text-white/90 text-xs md:text-sm line-clamp-3">Office
+                            buildings, retail shopping centers, and complexes.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
                 </div>
 
                 <!-- Card 3: Industrial -->
                 <div
-                    class="group bg-white/95 backdrop-blur-sm p-6 hover:bg-brand-pink transition-colors duration-300 cursor-pointer border-t-4 border-transparent hover:border-brand-orange-dark shadow-lg">
-                    <h3 class="text-slate-900 group-hover:text-white text-lg font-bold mb-2 uppercase tracking-wide">
-                        Industrial Machinery</h3>
-                    <p class="text-slate-600 group-hover:text-white/90 text-sm">Expert assessment of manufacturing
-                        plants, power generation, and specialized equipment.</p>
+                    class="flex-1 flex flex-row rounded-md group bg-white mix-blend-overlay mix-blend-overlay backdrop-blur-[5px] hover:bg-brand-pink transition-colors duration-300 cursor-pointer shadow-lg overflow-hidden">
+                    <!-- Thumbnail (35%) -->
+                    <div
+                        class="w-[40%] flex-shrink-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center">
+                    </div>
+                    <!-- Content -->
+                    <div class="flex-1 p-4 md:p-5 text-left flex flex-col justify-center">
+                        <h3 class="text-black group-hover:text-white text-sm md:text-base font-bold mb-2 leading-tight">
+                            Industrial Machinery</h3>
+                        <p class="text-gray-900 group-hover:text-white/90 text-xs md:text-sm line-clamp-3">Industrial
+                            installations, power generation, and specialized equipment.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+
+
+                    </div>
+
+
                 </div>
 
-                <!-- Link: All Services -->
+                <!-- Link: All Services (Auto Width) -->
                 <a href="services.html"
-                    class="flex items-center justify-center bg-brand-orange-dark hover:bg-brand-pink text-white font-bold p-6 transition-colors duration-300 group">
-                    <span class="mr-2">All Services</span>
+                    class="flex-shrink-0 w-auto flex items-center justify-center text-white md:py-0 text-sm transition-colors duration-300 group flex items-end">
+                    <span class="mr-2 whitespace-nowrap">All Services</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-transform">
                         <path stroke-linecap="round" stroke-linejoin="round"
