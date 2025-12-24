@@ -10,14 +10,14 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 </head>
 
-<body class="min-h-[1000px]">
+<body>
 
     <!-- Navigation -->
     <nav id="main-nav"
         class="fixed w-full z-50 transition-all duration-300 ease-in-out text-white bg-white/10 border-b border-white/40">
         <div class="max-w-7xl mx-auto">
             <div class="flex items-center justify-between py-3 tracking-wide">
-                <div class="flex-shrink-0">
+                <div class="shrink-0">
                     <a href="index.html">
                         <!-- Logo: Managed by JS -->
                         <img id="nav-logo" src="./static/images/secm-logo-white.svg" alt="SEC & M Valuers"
@@ -57,10 +57,13 @@
         </div>
 
         <!-- Hero Content -->
-        <div class="relative z-10 max-w-4xl mt-30 mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-4xl font-serif font-bold tracking-tight text-white max-w-4xl mx-auto mb-10">
+        <div class="relative  z-10 max-w-4xl mt-36 mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-serif font-bold tracking-tight text-white max-w-4xl mx-auto mb-6">
                 Property Valuation Experts, Asset Consultants
             </h3>
+            <h4 class="text-white font-serif text-xl">
+                Registered Valuers, Management & Real Estate Consultants
+            </h4>
 
         </div>
 
@@ -162,12 +165,12 @@
                     <!-- Left: Content -->
                     <div class="flex flex-col justify-between relative z-10">
                         <!-- Colour blobs -->
-                        <div
-                            class="absolute -top-20 -right-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -z-20">
+                        <!-- <div
+                            class="absolute -top-20 -right-20 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -z-20">
                         </div>
                         <div
-                            class="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -z-10">
-                        </div>
+                            class="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -z-10">
+                        </div> -->
                         <span class="text-pink-700 font-mono text-sm tracking-widest uppercase mb-4 block">About
                             us</span>
                         <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mb-3 mb-6 leading-tight">
@@ -183,12 +186,14 @@
                         </p>
 
                         <a href="about_us.html"
-                            class="flex w-[160px] justify-between items-center px-6 py-2.5 font-medium border-2 border-brand-pink text-brand-pink hover:bg-brand-pink hover:text-white transition-all duration-300">
+                            class="flex group w-[160px] justify-between items-center px-6 py-2.5 font-medium border-2 border-brand-pink text-brand-pink rounded-md hover:bg-brand-pink hover:text-white transition-all duration-300">
                             Read More
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6 mt-1">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
+                                role="img"
+                                class="size-4 stroke-pink-700 group-hover:translate-x-1 group-hover:stroke-white transition-all duration-300">
+                                <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" stroke-width="1.5"
+                                    d="M3 11.477h18m-7.477 7.753L21 11.478 13.523 4"></path>
                             </svg>
 
                         </a>
@@ -220,19 +225,14 @@
             <!-- Background Blobs -->
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
                 <!-- Top Right Blob -->
-                <div
-                    class="absolute -top-64 -right-64 w-[800px] h-[800px] bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
-                </div>
-                <div
-                    class="absolute -top-64 -right-64 w-[800px] h-[800px] bg-noise rounded-full mix-blend-overlay opacity-30">
-                </div>
+
 
                 <!-- Bottom Left Blob -->
                 <div
                     class="absolute -bottom-74 -left-80 w-[540px] h-[800px] bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50">
                 </div>
                 <div
-                    class="absolute bottom-[800px] left-[800px] w-[540px] h-[800px] bg-orange-200 rounded-full filter blur-2xl opacity-50">
+                    class="absolute bottom-200 left-[800px] w-[540px] h-[800px] bg-orange-200 rounded-full filter blur-2xl opacity-50">
                 </div>
             </div>
 
@@ -242,7 +242,7 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <span class="text-pink-700 font-medium tracking-wider mb-3 block">Why SEC &
                         M.</span>
-                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-3 mb-6">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
                         Excellence in <span class="relative inline-block">Every
                             <svg class="absolute w-full h-3 -bottom-2 left-0 text-gray-800" viewBox="0 0 100 10"
                                 preserveAspectRatio="none">
@@ -259,89 +259,69 @@
                 </div>
 
                 <!-- Features Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="grid grid-cols-1 pb-16 md:grid-cols-3 gap-12">
 
                     <!-- Feature 1: Technical Capacity -->
                     <div class="group">
-                        <div
-                            class="w-14 h-14 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-pink transition-colors duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-7 h-7 text-pink-700 group-hover:text-white transition-colors duration-300">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">Organizational Capacity</h3>
+                        <img class="mb-4" src="static/images/org_capacity_illustration_.png" alt="Technical Capacity">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Technical Capacity</h3>
                         <p class="text-slate-700">
                             Specialized expertise in high-value assets, from real estate assets and industrial machinery
                             to
                             complex infrastructure.
                         </p>
                         <a href="about_us.html"
-                            class="flex justify-end gap-3 items-center font-medium text-sm text-gray-500 hover:text-pink-700 duration-300 mt-5">
+                            class="group flex justify-end gap-1 items-center font-medium text-sm text-gray-500 hover:text-pink-700 duration-300 mt-5 text-pink-700">
                             About us
-                            <svg xmns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6 mt-1">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
+                                role="img"
+                                class="size-4 stroke-pink-700 group-hover:translate-x-2 transition-all duration-300">
+                                <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" stroke-width="1.5"
+                                    d="M3 11.477h18m-7.477 7.753L21 11.478 13.523 4"></path>
                             </svg>
                         </a>
                     </div>
 
                     <!-- Feature 2: In good company -->
                     <div class="group">
-                        <div
-                            class="w-14 h-14 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-pink transition-colors duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-7 h-7 text-pink-700 group-hover:text-white transition-colors duration-300">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-                            </svg>
-                        </div>
+                        <img class="mb-4" src="static/images/in_good_company_illustration_.png" alt="In good company">
                         <h3 class="text-lg font-bold text-slate-900 mb-3">In good company</h3>
                         <p class="text-slate-700">
-                            A preferred property valuation partner for Safaricom, ABSA among others. Our work has
-                            consistently passed the
-                            stringent quality standards
-                            of big
-                            brands.
+                            A preferred valuation partner for major corporates and public sector institutions. Our work
+                            satisfies the stringent quality standards of big brands.
                         </p>
                         <a href="clients.html"
-                            class="flex justify-end gap-3 items-center font-medium text-sm text-gray-500 hover:text-pink-700 duration-300 mt-5">
+                            class="group flex justify-end gap-1 items-center font-medium text-sm text-gray-500 hover:text-pink-700 duration-300 mt-5 text-pink-700">
                             Who we serve
-                            <svg xmns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6 mt-1">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
+                                role="img"
+                                class="size-4 stroke-pink-700 group-hover:translate-x-2 transition-all duration-300">
+                                <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" stroke-width="1.5"
+                                    d="M3 11.477h18m-7.477 7.753L21 11.478 13.523 4"></path>
                             </svg>
                         </a>
                     </div>
 
                     <!-- Feature 3: 20+ Years -->
                     <div class="group">
-                        <div
-                            class="w-14 h-14 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-pink transition-colors duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-7 h-7 text-pink-700 group-hover:text-white transition-colors duration-300">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                            </svg>
-                        </div>
+                        <img class="mb-4" src="static/images/20_years_experience_illustration_.png"
+                            alt="20+ Years of Leadership">
                         <h3 class="text-lg font-bold text-slate-900 mb-3">20+ Years of Leadership</h3>
                         <p class="text-slate-700">
                             A track record of excellence in Kenya and East Africa. We combine local insights with
                             international best practices to deliver accurate asset values.
                         </p>
                         <a href="about_us.html"
-                            class="flex justify-end gap-3 items-center font-medium text-sm text-gray-500 hover:text-pink-700 duration-300 mt-5">
+                            class="group flex justify-end gap-1 items-center font-medium text-sm text-gray-500 hover:text-pink-700 duration-300 mt-5 text-pink-700">
                             Read more
-                            <svg xmns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6 mt-1">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
+                                role="img"
+                                class="size-4 stroke-pink-700 group-hover:translate-x-2 transition-all duration-300">
+                                <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-miterlimit="10" stroke-width="1.5"
+                                    d="M3 11.477h18m-7.477 7.753L21 11.478 13.523 4"></path>
                             </svg>
                         </a>
                     </div>
@@ -350,7 +330,7 @@
             </div>
 
             <!-- Stats Strip (Full Width) -->
-            <div class="w-full relative z-20 mt-10 bg-slate-900 overflow-hidden">
+            <div class="w-full relative z-20 bg-slate-900 overflow-hidden">
                 <!-- Background Image -->
                 <div class="absolute inset-0 z-0">
                     <img src="./static/images/stats-bg.png" alt="Nairobi Skyline"
@@ -393,17 +373,21 @@
         </section>
     </main>
     <footer class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8 py-2">
-                <div class="flex flex-col h-50 justify-between xl:col-span-1">
+                <div class="flex flex-col gap-12 justify-between xl:col-span-1">
                     <div>
-                        <img class="inline" src="./static/images/secm-logo-white.svg" alt="">
+                        <img class="inline" src="./static/images/secm-logo-white.svg" alt="RICS Certified Company">
                     </div>
                     <p class="text-2xl w-full max-w-xs text-slate-200 font-extrabold">SEC &amp; M. Company Limited</p>
                     <p class="w-full max-w-xs text-slate-200">
                         Registered Valuers, Management &amp; Real Estate Consultants
                     </p>
+                    <div class="flex">
+                        <img class="inline-flex h-12 opacity-40" src="./static/images/rics_logo.svg" alt="RICS Logo">
+                    </div>
                 </div>
+
                 <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
