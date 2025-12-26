@@ -7,12 +7,6 @@
     <title>SEC & M Valuers</title>
     <link rel="icon" type="image/x-icon" href="favicon.svg">
     <link rel="stylesheet" href="./static/css/global.css">
-    <style>
-        /* .service-card {
-            border-top-right-radius: 24px;
-            corner-shape: bevel;
-        } */
-    </style>
 </head>
 
 <body>
@@ -29,7 +23,7 @@
                     </a>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-6">
+                    <div class="ml-10 flex items-center space-x-6">
                         <a href="index.html"
                             class="px-3 py-2 font-medium text-sm tracking-wide hover:text-pink-600 transition-colors">HOME</a>
                         <a href="about_us.html"
@@ -41,7 +35,7 @@
                             class="px-3 py-2 font-medium text-sm tracking-wider hover:text-pink-600 transition-colors">OUR
                             CLIENTS</a>
                         <a href="contact_us.html"
-                            class="flex items-center gap-2 px-5 py-3 text-[14px] font-semibold tracking-wider hover:text-pink-600 transition-colors font-sans">
+                            class="flex items-center gap-2 px-3 py-2 font-medium text-sm tracking-wide hover:text-pink-600 transition-colors">
                             <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
                                 viewBox="0 0 24 24">
                                 <path
@@ -66,12 +60,14 @@
         </div>
 
         <!-- Hero Content -->
-        <div class="relative z-10 max-w-4xl mt-36 mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-4xl font-serif font-bold tracking-tight leading-relaxed text-white max-w-4xl mx-auto mb-6">
-                Expert property valuations, bankable insights.
+        <div class="relative z-10 max-w-4xl mt-28 mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 id="hero-title"
+                class="text-[44px] font-serif font-bold leading-tight text-white max-w-4xl mx-auto mb-8 transition-all duration-1000 ease-in-out -translate-y-10">
+                Expert property valuations,<br> bankable insights.
             </h3>
-            <h4 class="text-white text-xl">
-                Get sound property consultancy insights that drive informed business decisions
+            <h4 id="hero-subtitle"
+                class="text-white text-2xl transition-all duration-700 ease-in-out -translate-y-10 delay-300">
+                Sound asset value insights for informed financial and planning decisions
             </h4>
 
         </div>
@@ -82,7 +78,7 @@
 
                 <!-- Card 1: Residential -->
                 <div
-                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 transition-colors duration-300 cursor-pointer  overflow-hidden">
+                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
                     <!-- Thumbnail (35%) -->
                     <div
                         class="w-[40%] shrink-0 bg-white bg-[url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80')] bg-cover bg-center">
@@ -103,7 +99,7 @@
 
                 <!-- Card 2: Commercial -->
                 <div
-                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 transition-colors duration-300 cursor-pointer  overflow-hidden">
+                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
                     <!-- Thumbnail (35%) -->
                     <div
                         class="w-[40%] shrink-0 bg-white bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center">
@@ -125,7 +121,7 @@
 
                 <!-- Card 3: Industrial -->
                 <div
-                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 transition-colors duration-300 cursor-pointer  overflow-hidden">
+                    class="relative flex-1 flex flex-row group bg-slate-50 border border-white/30 hover:bg-brand-pink/80 cursor-pointer overflow-hidden">
                     <!-- Thumbnail (35%) -->
                     <div
                         class="w-[40%] shrink-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center">
@@ -267,7 +263,7 @@
                 </div>
 
                 <!-- Features Grid -->
-                <div class="grid grid-cols-1 pb-16 md:grid-cols-3 gap-12">
+                <div class="grid grid-cols-1 pb-16 md:grid-cols-3 gap-20">
                     <!-- Feature 3: 20+ Years -->
                     <div class="group">
                         <div class="flex items-end h-40 mb-4">
@@ -276,8 +272,8 @@
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 mb-3">We are the benchmark</h3>
                         <p class="text-slate-700">
-                            We combine local insights with
-                            international best practices and regulatory standards to deliver reliable reports.
+                            We combine local market intelligence with international best practices and regulatory
+                            standards to deliver reliable reports.
                         </p>
                         <a href="about_us.html"
                             class="group flex justify-end gap-1 items-center font-medium text-sm hover:text-pink-700 duration-300 mt-5 text-pink-700">
@@ -448,11 +444,11 @@
                                         Nairobi</span>
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-                                        </path>
+                                    <svg class="shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                        data-name="Layer 1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z"
+                                            style="stroke-width:0" />
                                     </svg>
                                     <span class="ml-3 text-sm text-gray-300">(254) 725 969 290</span>
                                 </li>
@@ -498,5 +494,27 @@
     </footer>
 
     <script src="./static/js/nav.js"></script>
+    <script>
+        // Hero Entrance Animations
+        window.addEventListener('DOMContentLoaded', () => {
+            const elements = [
+                '#hero-title',
+                '#hero-subtitle',
+                '#hero-card-1',
+                '#hero-card-2',
+                '#hero-card-3'
+            ];
+
+            // Trigger by removing initial transform classes
+            elements.forEach(id => {
+                const el = document.querySelector(id);
+                if (el) {
+                    el.classList.remove('translate-y-5', '-translate-x-10');
+                    el.classList.add('translate-y-0', 'translate-x-0');
+                }
+            });
+        });
+    </script>
+</body>
 
 </html>
