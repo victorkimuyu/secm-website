@@ -32,7 +32,7 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-center space-x-8 text-[13px] tracking-wide">
+                    <div class="ml-10 flex items-center space-x-8 text-[12px] tracking-wide">
                         <a href="index.html"
                             class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SEC
                             & M.</a>
@@ -41,9 +41,6 @@
                             US</a>
                         <a href="services.html"
                             class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors text-brand-orange-light border-b-2 border-b-brand-orange-dark">SERVICES</a>
-                        <a href="clients.html"
-                            class="py-1 font-medium tracking-wider hover:text-brand-orange-light transition-colors">OUR
-                            CLIENTS</a>
                         <a id="nav-cta" href="contact_us.html"
                             class="flex items-center gap-2 px-3 py-3 text-slate-900 font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
                             <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
@@ -79,8 +76,6 @@
                     class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">ABOUT US</a>
                 <a href="services.html"
                     class="block py-2 text-brand-orange-light font-medium border-l-2 border-brand-orange-dark pl-3">SERVICES</a>
-                <a href="clients.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">OUR CLIENTS</a>
                 <a href="contact_us.html"
                     class="flex items-center gap-2 py-3 mt-4 text-white font-medium bg-pink-700 px-4 rounded">
                     <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -93,201 +88,207 @@
         </div>
     </nav>
 
-    <main class="mt-16">
+    <main class="mt-16 bg-white text-slate-900">
         <!-- Hero Section -->
-        <section class="relative py-16 flex items-center overflow-hidden bg-slate-900">
-            <div class="absolute inset-0 z-0">
-                <img src="./static/images/services-residential.png" alt="Modern Architecture"
-                    class="w-full h-full object-cover opacity-50">
-                <div class="absolute inset-0 bg-linear-to-b from-indigo-900/60 to-indigo-900"></div>
+        <section class="relative overflow-hidden bg-slate-900">
+            <div class="absolute inset-0">
+                <img src="./static/images/services-residential.jpg" alt="Modern Architecture"
+                    class="w-full h-full object-cover opacity-60">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-indigo-950/80 via-indigo-900/70 to-pink-700/45 mix-blend-multiply">
+                </div>
             </div>
-            <div class="relative z-10 px-8 sm:px-6 lg:px-14 text-white">
-                <h1 class="text-4xl font-serif font-bold mb-6">Professional Valuations <br>For diverse Asset classes
-                </h1>
-                <p class="text-lg text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
-                    Pairing Technical Competence with market knowledge, we provide valuation solutions to support
-                    business decisions and planning
+            <div class="relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-20 lg:py-24 text-center text-white">
+                <p class="text-sm uppercase tracking-[0.3em] text-indigo-100/90 mb-5">Valuation & Advisory</p>
+                <h1 class="text-3xl sm:text-2xl lg:text-4xl font-serif font-bold leading-tight">Premier expertise across
+                    all asset classes</h1>
+                <p class="mt-6 text-lg sm:text-xl text-indigo-100/90 max-w-3xl mx-auto font-normal">
+                    Market insight, and defensible reporting for lenders, investors, corporates, and public
+                    institutions.
                 </p>
             </div>
         </section>
 
         <!-- Main Services Grid -->
-        <section class="bg-white">
-            <div class="">
+        <section id="services" class="bg-white">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 lg:py-20 space-y-16 lg:space-y-20">
+
                 <!-- 1. Residential Property -->
-                <div
-                    class="p-6 sm:p-10 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-16 bg-slate-50 border-b border-b-slate-200">
-                    <div class="order-2 lg:order-1">
-                        <h2 class="text-3xl font-serif font-bold text-slate-900 mb-6">Residential Properties
-                        </h2>
-                        <p class="text-lg text-slate-700 leading-relaxed mb-8">
-                            From individual dwellings to expansive housing developments, we provide precision-driven
-                            valuations for residential assets. Our expertise covers mortgage assessments, insurance
-                            valuations, and pre-purchase advisory across Kenya's dynamic urban and rural landscapes.
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+                    <div class="lg:col-span-5 order-2 lg:order-1 space-y-5">
+                        <div
+                            class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                            <span class="h-1.5 w-1.5 rounded-full bg-pink-600"></span> Residential Properties
+                        </div>
+                        <h2 class="text-3xl font-serif font-bold text-slate-900 leading-tight">Precision for homes and
+                            developments</h2>
+                        <p class="text-base text-slate-600 leading-relaxed">
+                            Mortgage, insurance, and transaction-ready valuations for single dwellings through to
+                            large-scale residential schemes across Kenya’s urban and peri-urban markets.
                         </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Mansions, Maisonettes & Luxury residences
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Apartment Blocks & High-rise Developments
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Agricultural Farmhouses & Estates
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Gated Housing Communities
-                            </li>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Mansions, maisonettes,
+                                luxury residences</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Apartment blocks & vertical
+                                developments</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Gated communities &
+                                mixed-use estates</li>
                         </ul>
                     </div>
-                    <div class="order-1 lg:order-2">
-                        <div class="aspect-4/3 overflow-hidden">
-                            <img src="./static/images/services-residential.png" alt="Residential Luxury Home"
-                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <div class="relative overflow-hidden rounded-3xl shadow-xl shadow-slate-900/10">
+                            <div class="aspect-[4/3] bg-slate-100">
+                                <img src="./static/images/services-residential.jpg" alt="Residential Luxury Home"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 2. Commercial Property -->
-                <div class="p-6 sm:p-10 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-16">
-                    <div class="relative">
-                        <div class="aspect-4/3 overflow-hidden">
-                            <img src="./static/images/services-commercial.png" alt="Modern Commercial Building"
-                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                <div
+                    class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center pt-6 lg:pt-10 border-t border-slate-200/80">
+                    <div class="lg:col-span-7">
+                        <div class="relative overflow-hidden rounded-3xl shadow-xl shadow-slate-900/10">
+                            <div class="aspect-[4/3] bg-slate-100">
+                                <img src="./static/images/services-commercial.jpg" alt="Modern Commercial Building"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-3xl font-serif font-bold text-slate-900 mb-6">Commercial Properties</h2>
-                        <p class="text-lg text-slate-700 leading-relaxed mb-8">
-                            Maximizing ROI requires a deep understanding of commercial market dynamics. We provide
-                            comprehensive valuations for commercial assets, utilizing income-capitalization models and
-                            comparative analysis to support investment, leasing, and portfolio management.
+                    <div class="lg:col-span-5 space-y-5">
+                        <div
+                            class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                            <span class="h-1.5 w-1.5 rounded-full bg-pink-600"></span> Commercial Properties
+                        </div>
+                        <h2 class="text-3xl font-serif font-bold text-slate-900 leading-tight">Investment-grade
+                            commercial insight</h2>
+                        <p class="text-base text-slate-600 leading-relaxed">
+                            Income and market-based valuations for offices, retail, logistics, and mixed-use assets,
+                            aligned to lender, investor, and portfolio reporting standards.
                         </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Grade-A Office Buildings
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Regional Shopping Malls & Retail Centers
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Industrial Warehouses & Logistics Hubs
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Multi-use Integrated Complexes
-                            </li>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Grade-A offices, corporate
+                                HQs, business parks</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Retail malls, high-street &
+                                destination retail</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Industrial warehouses &
+                                logistics hubs</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- 3. Machinery & Equipment -->
                 <div
-                    class="p-6 sm:p-10 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-16 bg-slate-50 border-b border-b-slate-300">
-                    <div class="order-2 lg:order-1">
-                        <h2 class="text-3xl font-serif font-bold text-slate-900 mb-6">Machinery & Equipment
-                        </h2>
-                        <p class="text-lg text-slate-700 leading-relaxed mb-8">
-                            Valuing technical assets requires engineering precision. Our specialized team assesses
-                            industrial installations and specialized equipment, focusing on depreciation cycles, salvage
-                            value, and operational life-cycles for financial reporting, insurance, and disposal.
+                    class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center pt-6 lg:pt-10 border-t border-slate-200/80">
+                    <div class="lg:col-span-5 order-2 lg:order-1 space-y-5">
+                        <div
+                            class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                            <span class="h-1.5 w-1.5 rounded-full bg-pink-600"></span> Machinery & Equipment
+                        </div>
+                        <h2 class="text-3xl font-serif font-bold text-slate-900 leading-tight">Engineering-led asset
+                            valuations</h2>
+                        <p class="text-base text-slate-600 leading-relaxed">
+                            Specialist teams assess industrial installations and complex equipment, factoring
+                            depreciation, salvage, and operational lifecycles for audit, insurance, and disposal.
                         </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Heavy Industrial Manufacturing Plants
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Renewable Power Generation (Solar, Wind, Geothermal)
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Specialized Medical & Laboratory Equipment
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Agricultural & Construction Fleet Valuation
-                            </li>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Heavy manufacturing plants
+                                & production lines</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Renewable power assets
+                                (solar, wind, geothermal)</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Specialized medical, lab,
+                                and precision equipment</li>
                         </ul>
                     </div>
-                    <div class="order-1 lg:order-2">
-                        <div class="aspect-4/3 overflow-hidden">
-                            <img src="./static/images/services-machinery.png" alt="Industrial Machinery"
-                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <div class="relative overflow-hidden rounded-3xl shadow-xl shadow-slate-900/10">
+                            <div class="aspect-[4/3] bg-slate-100">
+                                <img src="./static/images/services-machinery.jpg" alt="Industrial Machinery"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 4. Special Assets -->
-                <div class="p-6 sm:p-10 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-16">
-                    <div class="relative">
-                        <div class="aspect-4/3 overflow-hidden">
-                            <img src="./static/images/services-special.png" alt="Luxury Safari Lodge"
-                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                <div
+                    class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center pt-6 lg:pt-10 border-t border-slate-200/80">
+                    <div class="lg:col-span-7">
+                        <div class="relative overflow-hidden rounded-3xl shadow-xl shadow-slate-900/10">
+                            <div class="aspect-[4/3] bg-slate-100">
+                                <img src="./static/images/services-special.jpg" alt="Luxury Safari Lodge"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-3xl font-serif font-bold text-slate-900 mb-6">Special Assets</h2>
-                        <p class="text-lg text-slate-700 leading-relaxed mb-8">
-                            Unique assets require specialized methodologies. We specialize in the valuation of
-                            'going-concern' entities and conservation-sensitive properties, ensuring that both business
-                            potential and environmental value are accurately represented.
+                    <div class="lg:col-span-5 space-y-5">
+                        <div
+                            class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                            <span class="h-1.5 w-1.5 rounded-full bg-pink-600"></span> Special Assets
+                        </div>
+                        <h2 class="text-3xl font-serif font-bold text-slate-900 leading-tight">Unique properties,
+                            tailored methodologies</h2>
+                        <p class="text-base text-slate-600 leading-relaxed">
+                            Going-concern and conservation-sensitive valuations that capture both business performance
+                            and environmental value for distinctive destinations.
                         </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Luxury Hotels, Resorts & Boutique Lodges
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Private Wildlife Conservancies & Game Reserves
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Specialized Recreational & Sport Facilities
-                            </li>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Luxury hotels, resorts, and
+                                boutique lodges</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Wildlife conservancies &
+                                game reserves</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Specialized recreational &
+                                sports facilities</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- 5. Infrastructure -->
                 <div
-                    class="px-6 sm:px-10 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center bg-slate-50 border-b border-t border-slate-100">
-                    <div class="order-2 lg:order-1">
-                        <h2 class="text-3xl font-serif font-bold text-slate-900 mb-6">Infrastructure Valuation</h2>
-                        <p class="text-lg text-slate-700 leading-relaxed mb-8">
-                            Standard valuation techniques often fall short for large-scale public and private
-                            infrastructure. We provide expert advisory for major utility and transport assets,
-                            supporting
-                            public-private partnerships (PPP) and national development frameworks.
+                    class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center pt-6 lg:pt-10 border-t border-slate-200/80">
+                    <div class="lg:col-span-5 order-2 lg:order-1 space-y-5">
+                        <div
+                            class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                            <span class="h-1.5 w-1.5 rounded-full bg-pink-600"></span> Infrastructure
+                        </div>
+                        <h2 class="text-3xl font-serif font-bold text-slate-900 leading-tight">Large-scale assets,
+                            defensible opinions</h2>
+                        <p class="text-base text-slate-600 leading-relaxed">
+                            Robust valuations for public and private infrastructure, supporting PPPs, financing, and
+                            strategic planning across transport, utilities, and connectivity assets.
                         </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                National Highway Networks & Bridge Projects
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Public Utilities (Water Treatment & Power Distribution)
-                            </li>
-                            <li class="flex items-center text-slate-600">
-                                <span class="w-1.5 h-1.5 bg-brand-orange-dark rounded-full mr-3"></span>
-                                Telecommunications & Connectivity Assets
-                            </li>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>National highways, bridges,
+                                and mobility networks</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Water, power distribution,
+                                and utility assets</li>
+                            <li class="flex items-start gap-3"><span
+                                    class="mt-2 h-1.5 w-1.5 rounded-full bg-pink-600"></span>Telecoms and digital
+                                infrastructure</li>
                         </ul>
                     </div>
-                    <div class="order-1 lg:order-2">
-                        <div class="aspect-4/3 overflow-hidden">
-                            <img src="./static/images/services-infrastructure.png" alt="Modern Bridge Infrastructure"
-                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <div class="relative overflow-hidden rounded-3xl shadow-xl shadow-slate-900/10">
+                            <div class="aspect-[4/3] bg-slate-100">
+                                <img src="./static/images/services-infrastructure.jpg"
+                                    alt="Modern Bridge Infrastructure"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -295,15 +296,18 @@
         </section>
 
         <!-- Final CTA Section -->
-        <section class="py-12 border-t border-slate-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-serif font-bold text-slate-900 mb-8">Ready to assess your asset's true market
-                    potential?
-                </h2>
-                <div class="flex flex-col sm:flex-row justify-center gap-6">
+        <section class="py-14 border-t border-slate-200 bg-slate-50">
+            <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-6">Ready to assess your asset's
+                    true market potential?</h2>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="contact_us.html"
-                        class="px-8 py-4 bg-brand-pink text-white font-bold rounded hover:bg-slate-900 transition-colors shadow-lg shadow-brand-orange-dark/20">
-                        Request a Valuation
+                        class="px-7 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-500 transition shadow-lg shadow-pink-900/20">
+                        Request a valuation
+                    </a>
+                    <a href="about_us.html"
+                        class="px-7 py-3 bg-white text-slate-900 font-semibold rounded-lg ring-1 ring-slate-200 hover:ring-slate-300 transition shadow-sm">
+                        Meet the team
                     </a>
                 </div>
             </div>
@@ -349,8 +353,6 @@
                             <ul class="mt-4 space-y-3">
                                 <li><a href="about_us.html" class="text-sm text-gray-300 hover:text-white">About
                                         Us</a></li>
-                                <li><a href="clients.html" class="text-sm text-gray-300 hover:text-white">Our
-                                        Clients</a></li>
                                 <li><a href="contact_us.html" class="text-sm text-gray-300 hover:text-white">Contact
                                         Us</a></li>
                             </ul>

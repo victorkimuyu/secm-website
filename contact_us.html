@@ -13,82 +13,190 @@
 
     <!-- Navigation -->
     <nav id="main-nav"
-        class="fixed top-0 left-0 w-full z-60 transition-[background-color,color,box-shadow] duration-300 ease-in-out bg-white text-slate-900 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between py-3 tracking-wide">
-                <div class="shrink-0">
-                    <a href="index.html">
-                        <!-- Logo: Managed by JS -->
-                        <img id="nav-logo" src="./static/images/secm-logo-color.svg" alt="SEC & M Valuers"
-                            class="h-6 md:h-8 w-auto transition-opacity duration-300">
-                    </a>
-                </div>
+    class="fixed top-0 left-0 w-full z-60 transition-[background-color,color,box-shadow] duration-300 ease-in-out bg-white text-slate-900 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-3 tracking-wide">
+            <div class="shrink-0">
+                <a href="index.html">
+                    <!-- Logo: Managed by JS -->
+                    <img id="nav-logo" src="./static/images/secm-logo-color.svg" alt="SEC & M Valuers"
+                        class="h-6 md:h-8 w-auto transition-opacity duration-300">
+                </a>
+            </div>
 
-                <!-- Desktop Navigation -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-center space-x-8 text-[13px] tracking-wide">
-                        <a href="index.html"
-                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SEC
-                            & M.</a>
-                        <a href="about_us.html"
-                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">ABOUT
-                            US</a>
-                        <a href="services.html"
-                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SERVICES</a>
-                        <a href="clients.html"
-                            class="py-1 font-medium tracking-wider hover:text-brand-orange-light transition-colors">OUR
-                            CLIENTS</a>
-                        <a id="nav-cta" href="contact_us.html"
-                            class="flex items-center gap-2 px-3 py-3 text-slate-900 font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
-                            <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
-                                viewBox="0 0 24 24" stroke-width="0.25" stroke="currentColor">
-                                <path
-                                    d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z" />
-                            </svg>
-                            GET IN TOUCH</a>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-center space-x-8 text-[12px] tracking-wide">
+                    <a href="index.html"
+                        class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SEC
+                        & M.</a>
+                    <a href="about_us.html"
+                        class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">ABOUT
+                        US</a>
+                    <a href="services.html"
+                        class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors text-brand-orange-light border-b-2 border-b-brand-orange-dark">SERVICES</a>
+                    <a id="nav-cta" href="contact_us.html"
+                        class="flex items-center gap-2 px-3 py-3 text-slate-900 font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
+                        <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                            viewBox="0 0 24 24" stroke-width="0.25" stroke="currentColor">
+                            <path
+                                d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z" />
+                        </svg>
+                        GET IN TOUCH</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" type="button"
+                class="flex md:hidden p-2 rounded-md focus:outline-none text-slate-900 transition-colors duration-300"
+                aria-label="Open menu">
+                <svg id="hamburger-icon" class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24">
+                    <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                    <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-sm border-t border-slate-700">
+        <div class="px-4 py-6 space-y-4">
+            <a href="index.html"
+                class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SEC
+                & M.</a>
+            <a href="about_us.html"
+                class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">ABOUT US</a>
+            <a href="services.html"
+                class="block py-2 text-brand-orange-light font-medium border-l-2 border-brand-orange-dark pl-3">SERVICES</a>
+            <a href="contact_us.html"
+                class="flex items-center gap-2 py-3 mt-4 text-white font-medium bg-pink-700 px-4 rounded">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z" />
+                </svg>
+                GET IN TOUCH
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <main class="pt-16 text-slate-900">
+        <section class="bg-slate-700 text-white shadow-sm border-b border-slate-200/70">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+                <h1 class="text-4xl sm:text-5xl font-serif font-bold tracking-tight">Get in touch</h1>
+                <p class="mt-3 text-lg sm:text-xl max-w-2xl">
+                    Reach our team for valuation instructions, advisory mandates or general enquiries. We respond within
+                    one business day.
+                </p>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+
+            <div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
+                <div class="space-y-6">
+                    <div class="space-y-6">
+                        <div>
+                            <h2 class="text-2xl font-semibold text-slate-900">Contact details</h2>
+                            <p class="mt-1 text-base text-slate-600">Prefer to speak directly? Use the details below.</p>
+                        </div>
+                        <div class="space-y-6 text-base text-slate-700">
+                            <div>
+                                <p class="text-sm font-medium uppercase tracking-wide text-slate-500">Phone</p>
+                                <a href="tel:+254725969290"
+                                    class="inline-flex">
+                                    (254) 725 969 290
+                                </a>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-wide text-slate-500">Email</p>
+                                <a href="mailto:valuations@secmvaluations.com"
+                                    class="inline-flex">
+                                    valuations@secmvaluations.com
+                                </a>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-wide text-slate-500">Office</p>
+                                <p class="mt-1 text-base text-slate-700">
+                                    Woodland Business Park, Block B<br>
+                                    Upper Hill, Nairobi, Kenya
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-wide text-slate-500">Hours</p>
+                                <p class="text-base text-slate-700">
+                                    Monday – Friday: 8:30am – 5:30pm (EAT)
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" type="button"
-                    class="flex md:hidden p-2 rounded-md focus:outline-none text-slate-900 transition-colors duration-300"
-                    aria-label="Open menu">
-                    <svg id="hamburger-icon" class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24">
-                        <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                        <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
+                <div>
+                    <div class="rounded-2xl bg-slate-50 shadow-sm ring-1 ring-slate-100 p-6 sm:p-7">
+                        <h2 class="text-xl font-semibold text-slate-900">Send us a message</h2>
+                        <p class="mt-1 mb-6 text-base text-slate-600">
+                            Share a few details and we’ll come back with next steps.
+                        </p>
+                        <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="space-y-1.5">
+                                <label for="name" class="text-base font-medium text-slate-800">Your name</label>
+                                <input id="name" name="name" type="text" required
+                                    class="w-full rounded-lg border border-slate-200 px-4 py-3 text-base text-slate-900 shadow-sm focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none bg-white">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label for="email" class="text-base font-medium text-slate-800">Email</label>
+                                <input id="email" name="email" type="email" required
+                                    class="w-full rounded-lg border border-slate-200 px-4 py-3 text-base text-slate-900 shadow-sm focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none bg-white">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label for="phone" class="text-base font-medium text-slate-800">Phone</label>
+                                <input id="phone" name="phone" type="tel"
+                                    class="w-full rounded-lg border border-slate-200 px-4 py-3 text-base text-slate-900 shadow-sm focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none bg-white">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label for="company" class="text-base font-medium text-slate-800">Company</label>
+                                <input id="company" name="company" type="text"
+                                    class="w-full rounded-lg border border-slate-200 px-4 py-3 text-base text-slate-900 shadow-sm focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none bg-white">
+                            </div>
+                            <div class="space-y-1.5 md:col-span-2">
+                                <label for="details" class="text-base font-medium text-slate-800">How can we help?</label>
+                                <textarea id="details" name="details" rows="4" required
+                                    class="w-full rounded-lg border border-slate-200 px-4 py-3 text-base text-slate-900 shadow-sm focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none bg-white"
+                                    placeholder="Briefly describe the property, purpose of valuation or advisory need."></textarea>
+                            </div>
+                            <div class="md:col-span-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                                <p class="text-sm text-slate-500">
+                                    We keep your information confidential and only use it to respond to your enquiry.
+                                </p>
+                                <button type="submit"
+                                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-pink-700 px-5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-pink-500 transition">
+                                    Send
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Mobile Navigation Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-sm border-t border-slate-700">
-            <div class="px-4 py-6 space-y-4">
-                <a href="index.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SEC
-                    & M.</a>
-                <a href="about_us.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">ABOUT US</a>
-                <a href="services.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SERVICES</a>
-                <a href="clients.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">OUR CLIENTS</a>
-                <a href="contact_us.html"
-                    class="flex items-center gap-2 py-3 mt-4 text-white font-medium bg-pink-700 px-4 rounded">
-                    <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z" />
-                    </svg>
-                    GET IN TOUCH
-                </a>
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
+            <div class="rounded-2xl overflow-hidden border-2 border-slate-300">
+                <div class="w-full h-[320px] sm:h-[380px] lg:h-[420px]">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.787352243187!2d36.8218089!3d-1.3025459000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10e334a3423d%3A0x60750d4cd0f56e4f!2sWoodland%20Business%20Park!5e0!3m2!1sen!2ske!4v1767692028156!5m2!1sen!2ske"
+                        class="w-full h-full block border-0" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <main class="pt-20">
-        <!-- Content goes here -->
+        </section>
     </main>
 
     <footer class="bg-gray-900 text-white">
@@ -130,8 +238,6 @@
                             <ul class="mt-4 space-y-3">
                                 <li><a href="about_us.html" class="text-sm text-gray-300 hover:text-white">About
                                         Us</a></li>
-                                <li><a href="clients.html" class="text-sm text-gray-300 hover:text-white">Our
-                                        Clients</a></li>
                                 <li><a href="contact_us.html" class="text-sm text-gray-300 hover:text-white">Contact
                                         Us</a></li>
                             </ul>

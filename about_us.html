@@ -26,7 +26,7 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-center space-x-8 text-xs tracking-wider">
+                    <div class="ml-10 flex items-center space-x-8 text-[12px] tracking-wider">
                         <a href="index.html"
                             class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SEC
                             & M.</a>
@@ -35,9 +35,6 @@
                             US</a>
                         <a href="services.html"
                             class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SERVICES</a>
-                        <a href="clients.html"
-                            class="py-1 font-medium tracking-wider hover:text-brand-orange-light transition-colors">OUR
-                            CLIENTS</a>
                         <a id="nav-cta" href="contact_us.html"
                             class="flex items-center gap-2 px-3 py-3 text-slate-900 font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
                             <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
@@ -74,8 +71,6 @@
                     US</a>
                 <a href="services.html"
                     class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SERVICES</a>
-                <a href="clients.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">OUR CLIENTS</a>
                 <a href="contact_us.html"
                     class="flex items-center gap-2 py-3 mt-4 text-white font-medium bg-pink-700 px-4 rounded">
                     <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -88,29 +83,37 @@
         </div>
     </nav>
 
-    <main class="mt-16">
+    <main class="mt-16 bg-white text-slate-900">
         <!-- Hero Section -->
-        <section class="relative h-[60vh] flex items-center overflow-hidden bg-brand-pink">
-            <div class="relative z-10 max-w-7xl px-5 sm:px-6 lg:px-12">
-                <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-                    A story of commitment to <br> customer success
+        <section class="relative overflow-hidden bg-slate-900">
+            <div class="absolute inset-0">
+                <img src="./static/images/about-office.png" alt="Professional Office Environment"
+                    class="w-full h-full object-cover opacity-70">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-indigo-950/85 via-indigo-900 to-indigo-700/10 mix-blend-multiply">
+                </div>
+            </div>
+            <div class="relative max-w-6xl mx-auto py-20 lg:py-24">
+                <p class="text-sm uppercase tracking-[0.3em] text-indigo-100/90 mb-4">OUR STORY</p>
+                <h1 class="text-3xl md:text-4xl lg:text-4xl font-serif font-bold text-white leading-tight">Pairing
+                    integrity with competence
                 </h1>
-                <p class="text-xl text-slate-200 max-w-2xl font-light">
-                    2 decades of of growth fueled by integrity and world-class quality standards
+                <p class="mt-5 text-lg sm:text-xl text-indigo-100/90 max-w-3xl font-light">
+                    Over two decades of growth, grounded in independence, integrity, and globally benchmarked
+                    professional standards.
                 </p>
             </div>
         </section>
 
         <!-- Company Overview -->
-        <section class="py-20 bg-white border-b border-slate-300">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section class="py-20 bg-white border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div>
-                        <span class="text-brand-pink font-bold tracking-widest uppercase mb-4 block">Our Story</span>
                         <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-8">
                             A Legacy Built on Trust and Expertise
                         </h2>
-                        <div class="prose prose-lg text-slate-700 space-y-6">
+                        <div class="space-y-5 text-base md:text-lg text-slate-700 leading-relaxed">
                             <p>
                                 Established in 2003, SEC & M Valuers has grown into a premier
                                 Kenyan-owned property consulting firm. With over 20 years of active presence in the
@@ -134,112 +137,240 @@
 
                     </div>
                     <div class="relative">
-                        <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl shadow-slate-900/10">
                             <img src="./static/images/about-office.png" alt="Professional Office Environment"
-                                class="w-full h-full object-cover">
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                         </div>
                         <!-- Experience Badge -->
                         <div
-                            class="absolute -bottom-10 -left-10 bg-brand-orange-dark text-white p-8 rounded-xl shadow-xl hidden md:block">
-                            <div class="text-5xl font-bold mb-1">20+</div>
-                            <div class="text-sm uppercase tracking-wider font-medium">Years of Experience</div>
+                            class="absolute -bottom-8 -left-8 bg-slate-900 text-white px-7 py-5 rounded-2xl shadow-xl shadow-slate-900/40 hidden md:block">
+                            <div class="text-4xl font-bold mb-1">20+ years</div>
+                            <div class="text-xs uppercase tracking-[0.25em] font-medium text-slate-200">Active in East
+                                African markets</div>
                         </div>
                     </div>
                 </div>
-                <a href="about_us.html"
-                    class="w-full md:w-[160px] flex items-center justify-center md:justify-between bg-brand-pink md:bg-transparent text-white md:text-brand-pink py-3 md:py-2.5 md:px-6 rounded-lg md:rounded-none text-sm md:text-lg font-bold md:font-medium md:border-2 md:border-brand-pink transition-all duration-300 group mt-8 md:mt-0 tracking-wide md:tracking-normal reveal-on-scroll opacity-0 translate-y-8">
-                    <span>About us</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
-                        role="img"
-                        class="w-5 h-5 ml-2 md:ml-0 stroke-white md:stroke-brand-pink group-hover:translate-x-1 group-hover:stroke-white transition-all duration-300">
-                        <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-miterlimit="10" stroke-width="2" d="M3 11.477h18m-7.477 7.753L21 11.478 13.523 4">
-                        </path>
-                    </svg>
-                </a>
             </div>
         </section>
 
-        <!-- Vision, Mission & Philosophy -->
-        <section class="px-12 py-12 bg-slate-50">
-            <div
-                class="grid grid-cols-1 items-center justify-center md:justify-start md:grid-cols-3 text-center md:text-left">
-                <!-- Vision -->
-                <div class="p-8">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
+        <!-- Our Clients -->
+        <section class="px-6 sm:px-8 lg:px-12 py-20 bg-slate-50">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                <div class="lg:col-span-7 space-y-10">
+                    <div>
+                        <span class="text-pink-700 font-semibold tracking-[0.28em] text-xs uppercase mb-4 block">Our
+                            Clients</span>
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-4xl font-serif font-bold text-slate-900 leading-tight max-w-[600px] mb-10">
+                            Deep experience across institutional and private client segments
+                        </h2>
+                        <p class="mt-4 text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed mb-20">
+                            We act for lenders, insurers, developers, public bodies and private owners whose decisions
+                            depend on valuations that are independent, transparent and grounded in real market evidence.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Our Vision</h3>
-                    <p class="text-slate-600">
-                        To revolutionize real estate professional services by incorporating international best
-                        practices and global regulatory standards into local contexts.
-                    </p>
+
+                    <div class="space-y-10">
+                        <!-- Banks & SACCOs -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Banks & SACCOs
+                            </h3>
+                            <p class="text-lg font-semibold text-slate-900">Independent collateral and portfolio
+                                valuations for prudent, well‑secured lending.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                We work with commercial banks and SACCOs to value security for new lending,
+                                restructuring and recovery, providing consistent, regulator‑aligned reports that credit
+                                committees and risk teams can rely on across thousands of accounts.
+                            </p>
+                            <p>Some of our clients in this segment include:</p>
+                            <ol>
+                                <li>Absa Bank Kenya PLC formerly Barclays Bank of Kenya Limited (BBK)</li>
+                                <li>Central Bank of Kenya</li>
+                                <li>Kenya Commercial Bank (KCB)</li>
+                                <li>Equity Bank Limited</li>
+                                <li>Housing Finance of Kenya (HFCK)</li>
+                                <li>Bank of Africa Kenya Limited</li>
+                                <li>First Community Bank Limited</li>
+                                <li>Kenya Post Office Savings Bank (Post Bank)</li>
+                                <li>Ecobank</li>
+                                <li>Co-operative Bank of Kenya Limited</li>
+                                <li>Capital Markets Authority</li>
+                                <li>CPF Financial Services</li>
+                                <li>Consolidated Bank of Kenya</li>
+                                <li>Industrial Development Bank (IDB) Agricultural Finance Corporation (AFC)</li>
+                                <li>Tourism Finance Corporation</li>
+                                <li>Kenya Industrial Estates etc</li>
+                                <li>United Nations Sacco Society Limited (UNSACCO)</li>
+                                <li>Stima Sacco Society Limited</li>
+                                <li>Mwalimu Sacco Society</li>
+                                <li>Taifa Sacco Society Limited</li>
+                                <li>Micro Enterprises Support Programme Trust (MESPT)</li>
+                                <li>Wanandege Housing Co-operative Society Limited</li>
+                                <li>Vision Sacco</li>
+                                <li>Imarika Sacco</li>
+                                <li>Ardhi Sacco Society Limited</li>
+                                <li>Finnlem Sacco Society; Kiambu Unity Finance Co-operative Union</li>
+                                <li>Waumini Sacco Society</li>
+                                <li>Stima Investment Co-operative Society Ltd</li>
+                                <li>The Sacco Societies Regulatory Authority (SASRA)</li>
+                                <li>Ukulima Co-operative Savings and Credit Society Ltd</li>
+                                <li>Five Star Limited; All Saints Cathedral Church</li>
+                                <li>Local Authorities Provident Fund (LAPF)</li>
+                                <li>Meru South Farmers Sacco Society Limited</li>
+                                <li>Unaitas Sacco.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Insurance Companies -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Insurance
+                                Companies</h3>
+                            <p class="text-lg font-semibold text-slate-900">Reinstatement and market values that stand
+                                up to internal audit, reinsurers and claims review.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                For underwriters and loss adjusters, we determine sums insured and asset schedules for
+                                estates, industrial plants and specialist equipment, helping balance adequate cover with
+                                sustainable premium levels and faster, evidence‑based claims settlement.
+                            </p>
+                            <p>Some of our clients in this segment include</p>
+                            <ol>
+                                <li>Alexander Forbes</li>
+                                <li>Pacis Insurance Company</li>
+                                <li>Old Mutual among others</li>
+                                <li>Export Promotion Council (epc)</li>
+                                <li>African Population and Health Research Centre (APHRC)</li>
+                                <li>African Medical and Research Foundation (AMREF)</li>
+                                <li>EastAfrica Baptist Registered Trustees</li>
+                            </ol>
+                        </div>
+
+                        <!-- Developers & Realty Investors -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Developers
+                                &amp;
+                                Realty Investors</h3>
+                            <p class="text-lg font-semibold text-slate-900">Market‑grounded insight from feasibility,
+                                through delivery, to exit.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                We partner with local and international developers, REIT sponsors and private investors
+                                to test assumptions, price schemes and evaluate acquisitions, bringing together
+                                valuation expertise, feasibility analysis and on‑the‑ground market intelligence.
+                            </p>
+                        </div>
+
+                        <!-- Government & NGOs -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Government
+                                &amp;
+                                NGOs</h3>
+                            <p class="text-lg font-semibold text-slate-900">Transparent, audit‑ready valuations for
+                                public and donor‑funded assets.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                We support national and county governments, regulators and development partners with
+                                large‑scale asset registers, portfolio reviews and infrastructure valuation,
+                                underpinning
+                                IFRS reporting, PPP structuring and programme accountability.
+                            </p>
+                            <p>Some of our clients in this category include:</p>
+                            <ol>
+                                <li>Kenya Pipeline Company Limited (KPC)</li>
+                                <li>Kenya Seed Company Limited</li>
+                                <li>National Industrial Training Authority (NITA)</li>
+                                <li>Pyrethrum Board of Kenya (PBK)</li>
+                                <li>National Cereals and Produce Board (NCPB)</li>
+                                <li>Kenya Trade Network Agency (KenTrade)</li>
+                                <li>Kenya Literature Bureau</li>
+                                <li>Catering and Tourism Development Levy Trustee (CTDLT)</li>
+                                <li>Kenya Broadcasting Corporation (KBC)</li>
+                                <li>Coffee Board of Kenya</li>
+                                <li>Kenya Institute of Administration(KIA)</li>
+                                <li>Kenya Investment Authority (KenInvest)</li>
+                                <li>Kenya Medical Research Institute</li>
+                                <li>Kenya Police Sacco</li>
+                                <li>Kenya Reinsurance Corporation Ltd</li>
+                                <li>Kenya Railways</li>
+                                <li>Kenya Civil Aviation Authority (KCCA)</li>
+                                <li>Kenya Coconut Development Authority</li>
+                                <li>Industrial& Commercial Development Corporation (ICDC)</li>
+                                <li>Kenya Agricultural Research Institute (KARI),Kenya Airports Authority</li>
+                                <li>Export Processing Zone (EPZ)</li>
+                                <li>Kenya National Examination Council (KNEC)</li>
+                                <li>Athi Water Services Board</li>
+                                <li>Coffee Development Fund</li>
+                                <li>Githunguri Dairy Farmers Cooperative Society (Fresha)</li>
+                                <li>Harambee Co-operative Savings & Credit Society Limited</li>
+                                <li>Kenya Film Classification Board</li>
+                                <li>Kenya Institute for Public Policy Research and Analysis (KIPPRA)</li>
+                                <li>Association of Local Government Authorities of Kenya (ALGAK)</li>
+                                <li>Kenya National Assurance Company (2001) Ltd</li>
+                                <li>Kenya National Bureau of Statistics (KNBS)</li>
+                                <li>Kenya National Trading Corporation Limited (KNTC)</li>
+                                Kenya Industrial Property institute (KIPI)
+                                <li>National Coordinating Agency for Population and Development (NCAPD)</li>
+                                <li>Nairobi City Water & Sewerage Company Ltd.(NCWSC)</li>
+                                <li>National Construction Authority</li>
+                                <li>National Housing Corporation</li>
+                                <li>National Museum of Kenya</li>
+                                <li>National Oil Corporation of Kenya</li>
+                                <li>National Water Conversation & Pipeline Corporation</li>
+                                <li>New Kenya Co-operative Creameries Limited (NKCC) etc.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Individual Property Owners -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Individual
+                                Property Owners</h3>
+                            <p class="text-lg font-semibold text-slate-900">Clear guidance for high‑stakes personal
+                                and family decisions.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                From single homes to diversified personal portfolios, we assist owners with valuations
+                                for sale, purchase, refinancing, succession and matrimonial or estate planning, turning
+                                complex technical work into practical advice.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Mission -->
-                <div class="p-8">
-                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Our Mission</h3>
-                    <p class="text-slate-600">
-                        To provide accurate, timely, and unbiased valuation reports that empower our clients to
-                        make informed planning and sound financial decisions.
-                    </p>
-                </div>
+                <div class="lg:col-span-5">
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-xl shadow-slate-900/10 bg-slate-900/80 flex items-end justify-start min-h-[260px] lg:min-h-[380px]">
 
-                <!-- Philosophy -->
-                <div class="p-8 ">
-                    <div class="w-12 h-12 bg-brand-orange-light/20 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-brand-orange-dark" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/40 to-transparent mix-blend-multiply">
+                            <img src="./static/images/nairobi-skyline.jpg" alt="Nairobi skyline"
+                                class="w-full h-full object-cover">
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Our Philosophy</h3>
-                    <p class="text-slate-600">
-                        "An unrivalled depth of understanding!" We believe clarity on asset value is the
-                        cornerstone of global economic stability and individual financial growth.
-                    </p>
                 </div>
-            </div>
         </section>
 
         <!-- Core Values -->
-        <section class="p-16 bg-slate-900 text-white">
-            <div class="mx-auto w-full md:max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <section class="py-16 bg-slate-900 text-white">
+            <div class="mx-auto w-full md:max-w-7xl px-6 sm:px-8 lg:px-10 relative z-10">
                 <div class="text-center mb-12">
-                    <h2 class="text-2xl md:text-3xl font-serif font-bold mb-2">Core Values</h2>
-                    <p class="text-slate-400 text-xl">The principles that guide our conduct and client
+                    <h2 class="text-2xl md:text-3xl font-serif font-bold mb-3">Core Values</h2>
+                    <p class="text-slate-400 text-lg md:text-xl">The principles that guide our conduct and client
                         relationships.</p>
                 </div>
-                <div class="grid grid-cols-2 lg:grid-cols-8 gap-8 text-center">
-                    <div class="col-span-2">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="col-span-2 lg:col-span-1">
                         <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Integrity
                         </div>
                         <p class="text-slate-300">Unwavering fidelity to truth and the highest ethical
                             standards.</p>
                     </div>
-                    <div class="col-span-2">
+                    <div class="col-span-2 lg:col-span-1">
                         <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Diligence
                         </div>
                         <p class="text-slate-300">Zealous attention to every detail in report preparation.</p>
                     </div>
-                    <div class="col-span-2">
+                    <div class="col-span-2 lg:col-span-1">
                         <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Efficiency
                         </div>
                         <p class="text-slate-300">Ever On-time and within-budget delivery of reports.</p>
                     </div>
-                    <div class="col-span-2">
+                    <div class="col-span-2 lg:col-span-1">
                         <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Innovation
                         </div>
                         <p class="text-slate-300">Application of current methods and international standards.
@@ -251,42 +382,77 @@
 
         <!-- Leadership Team -->
         <section class="bg-slate-100 py-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                 <div class="text-center">
                     <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mb-12">Management Staff</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 text-center md:text-left gap-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 text-center md:text-left gap-10 md:gap-12">
                     <!-- Leader 1 -->
-                    <div class="group">
+                    <div class="group rounded-2xl bg-white shadow-sm shadow-slate-900/5 p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-1">H.M. Kaburu</h3>
-                        <p class="text-brand-pink font-medium text-sm mb-4 uppercase tracking-wider">Director —
+                        <h4>M.A. (Valuation & Property Mgt),
+                            B.A. Land Econ (Hons) (UoN), MRICS, M.I.S.K, Registered & Practising Valuer, REA, Dip.
+                            I.S.K Cert. EIA/EA (KIA) </h4>
+                        <p class="text-brand-pink font-medium text-xs mb-3 uppercase tracking-[0.2em]">Director —
                             Valuations</p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            23+ years experience. M.A. Valuation & Property Management, MRICS, Registered Valuer. Former
-                            board member of VRB.
+                            Over 23 years specializing in all facets of public and private sector complex valuations for
+                            mortgage, accounting, insurance and other purposes. Mr. Kaburu has coordinated successfully
+                            many major multi-disciplinary complex valuation assignment spread across the country and
+                            beyond for all purposes.
                         </p>
                     </div>
 
                     <!-- Leader 2 -->
-                    <div class="group">
+                    <div class="group rounded-2xl bg-white shadow-sm shadow-slate-900/5 p-6">
 
                         <h3 class="text-xl font-bold text-slate-900 mb-1">L.W. Muchiri</h3>
-                        <p class="text-brand-pink font-medium text-sm mb-4 uppercase tracking-wider">Strategic
+                        <h4>M. A Construction Management. (UoN), B. A Land Econ-(UoN),
+                            Dip. ISK, MISK, RV, REA.
+                            Consultant
+                        </h4>
+                        <p class="text-brand-pink font-medium text-xs mb-3 uppercase tracking-[0.2em]">Strategic
                             Consultant</p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            40+ years experience. M.A. Construction Management. Senior Lecturer at the University of
-                            Nairobi.
+                            Over 40 years specializing in all facets of public and private sector. He has coordinated
+                            many major multi-disciplinary valuation projects for mortgage, rental, insurance and other
+                            purposes. Senior lecturer UoN and currently lecturing plant and machinery courses for
+                            master’s students. He has coordinated many major multi- disciplinary valuation projects for
+                            mortgage, rental, insurance and other purposes.
                         </p>
                     </div>
 
                     <!-- Leader 3 -->
-                    <div class="group">
+                    <div class="group rounded-2xl bg-white shadow-sm shadow-slate-900/5 p-6">
+
+                        <h3 class="text-xl font-bold text-slate-900 mb-1">N.M. Nzioki</h3>
+                        <h4>M. A Construction Management. (UoN), B.A Land Econ-(UoN), Dip. I S K, M I S K, EIA/EA RV,
+                            REA. Lead Valuer in Natural
+                            Resource Valuations
+
+                        </h4>
+                        <p class="text-brand-pink font-medium text-xs mb-3 uppercase tracking-[0.2em]">Strategic
+                            Consultant</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Over 30 years specializing in all facets of public and private sector complex valuations for
+                            mortgage, rental, insurance and other purposes. He is a senior lecturer
+                            at the Dept. of Real Estate and Construction UoN
+
+                        </p>
+                    </div>
+
+                    <!-- Leader 3 -->
+                    <div class="group rounded-2xl bg-white shadow-sm shadow-slate-900/5 p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Prof. J. M. Kihiu</h3>
-                        <p class="text-brand-pink font-medium text-sm mb-4 uppercase tracking-wider">Technical Expert
+                        <h4>Ph.D, MS Mechanical Eng., FIEK, R.Cons. Eng., RLA , MACEK,
+                            MIARS & RICS member
+                        </h4>
+                        <p class="text-brand-pink font-medium text-xs mb-3 uppercase tracking-[0.2em]">Technical Expert
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            PhD Mechanical Engineering. 25+ years specializing in complex Plant, Machinery, and Motor
-                            Vehicle valuations.
+                            Over 25 years specializing in complex Plant, Machinery, Equipment and Motor Vehicle
+                            Valuation.
+
                         </p>
                     </div>
                 </div>
@@ -355,8 +521,6 @@
                             <ul class="mt-4 space-y-3">
                                 <li><a href="about_us.html" class="text-sm text-gray-300 hover:text-white">About
                                         Us</a></li>
-                                <li><a href="clients.html" class="text-sm text-gray-300 hover:text-white">Our
-                                        Clients</a></li>
                                 <li><a href="contact_us.html" class="text-sm text-gray-300 hover:text-white">Contact
                                         Us</a></li>
                             </ul>

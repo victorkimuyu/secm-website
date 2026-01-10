@@ -51,9 +51,6 @@
                             US</a>
                         <a href="services.html"
                             class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SERVICES</a>
-                        <a href="clients.html"
-                            class="py-1 font-medium tracking-wider hover:text-brand-orange-light transition-colors">OUR
-                            CLIENTS</a>
                         <a id="nav-cta" href="contact_us.html"
                             class="flex items-center gap-2 px-3 py-3 text-white font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
                             <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
@@ -89,8 +86,6 @@
                     class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">ABOUT US</a>
                 <a href="services.html"
                     class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SERVICES</a>
-                <a href="clients.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">OUR CLIENTS</a>
                 <a href="contact_us.html"
                     class="flex items-center gap-2 py-3 mt-4 text-white font-medium bg-pink-700 px-4 rounded">
                     <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -108,16 +103,16 @@
     <header class="relative bg-slate-200 w-full flex flex-col text-center text-white overflow-visible">
         <!-- Background Image with Overlay -->
         <div class="absolute top-0 left-0 w-full h-[70vh] md:h-screen z-0">
-            <div style="background-image: url('./static/images/nairobi.jpg')"
+            <div style="background-image: url('./static/images/nairobi-skyline.jpg')"
                 class="w-full h-full bg-slate-900 bg-cover bg-center">
-                <div class="absolute inset-0 bg-indigo-800/50 bg-blend-overlay"></div>
+                <div class="absolute inset-0 bg-indigo-800/50 bg-blend-color-burn"></div>
             </div>
         </div>
 
         <!-- Hero Content (Visual Part) -->
         <div
             class="relative z-10 w-full h-[70vh] md:h-screen flex flex-col items-center justify-center md:justify-start px-4">
-            <div class="max-w-4xl mx-auto md:mt-32">
+            <div class="max-w-4xl mx-auto md:mt-28">
                 <h3 id="hero-title"
                     class="text-3xl md:text-4xl font-serif font-bold leading-tight text-white mb-8 transition-all duration-1000 ease-out opacity-0 translate-y-8">
                     Expert property valuations,<br><span class="">bankable insights.</span>
@@ -127,30 +122,34 @@
                     We offer professional asset valuations for informed planning and sound financial decisions.
                 </h4>
             </div>
+            <a class="px-6 py-2.5 bg-pink-600 text-white font-medium text-sm tracking-wide rounded hover:bg-pink-700 transition border border-pink-400 mt-8"
+                href="services.html">Our Services</a>
         </div>
 
         <!-- Service Cards -->
-        <div class="relative z-20 w-full px-4 md:-mt-32 pb-12 md:pb-20 md:absolute md:bottom-0 md:left-0 md:px-16">
-            <div class="flex flex-col md:flex-row gap-12">
+        <div class="relative z-20 -mt-10 w-full px-4 md:mt-0 pb-12 md:pb-20 md:absolute md:bottom-0 md:left-0 md:px-16">
+            <div class="flex flex-col md:flex-row gap-8">
 
                 <!-- Card 1: Residential -->
                 <div id="service-card-1"
                     class="services-card reveal-item relative flex-1 flex flex-row group bg-white md:bg-slate-50 md:border-white/30 border border-slate-400 hover:bg-brand-pink/80 cursor-pointer overflow-hidden transition-all duration-700 opacity-0 translate-y-8">
                     <!-- Thumbnail (35%) -->
                     <div
-                        class="w-[40%] min-h-[100px] shrink-0 bg-slate-300 bg-[url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80')] bg-cover bg-center">
+                        class="w-[55%] sm:w-[40%] min-h-[100px] shrink-0 bg-slate-300 bg-[url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80')] bg-cover bg-center">
                     </div>
                     <!-- Content -->
-                    <div class="relative flex-1 p-3 md:p-5 text-left flex flex-col gap-2">
+                    <div class="relative flex-1 p-5 md:p-6 text-left flex flex-col gap-2">
                         <h3 class="text-black group-hover:text-white font-medium mb-2 leading-tight">
                             Residential valuations</h3>
                         <p class="text-gray-900 group-hover:text-white/90 text-sm line-clamp-3">Apartments blocks,
                             housing developments, private residences, etc.</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
+                        <a class="absolute right-4 bottom-3" href="services.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -159,19 +158,21 @@
                     class="services-card reveal-item relative flex-1 flex flex-row group bg-slate-300 md:bg-slate-50 border border-slate-400 hover:bg-brand-pink/80 cursor-pointer overflow-hidden transition-all duration-700 opacity-0 translate-y-8">
                     <!-- Thumbnail (35%) -->
                     <div
-                        class="w-[40%] min-h-[100px] shrink-0 bg-white bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center">
+                        class="w-[55%] sm:w-[40%] min-h-[100px] shrink-0 bg-white bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center">
                     </div>
                     <!-- Content -->
-                    <div class="flex-1 p-4 md:p-5 text-left flex flex-col gap-2">
+                    <div class="flex-1 p-5 md:p-6 text-left flex flex-col gap-2">
                         <h3 class="text-black group-hover:text-white font-medium mb-2 leading-tight">
                             Commercial valuations</h3>
                         <p class="text-gray-900 group-hover:text-white text-sm line-clamp-3">Office
                             buildings, retail shopping centers, and complexes.</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
+                        <a class="absolute right-4 bottom-3" href="services.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -180,19 +181,21 @@
                     class="services-card reveal-item relative flex-1 flex flex-row group bg-slate-300 md:bg-slate-50 border border-slate-400 hover:bg-brand-pink/80 cursor-pointer overflow-hidden transition-all duration-700 opacity-0 translate-y-8">
                     <!-- Thumbnail (35%) -->
                     <div
-                        class="w-[40%] min-h-[100px] shrink-0 bg-slate-300 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center">
+                        class="w-[55%] sm:w-[40%] min-h-[100px] shrink-0 bg-slate-300 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center">
                     </div>
                     <!-- Content -->
-                    <div class="flex-1 p-4 md:p-5 text-left flex flex-col gap-2">
+                    <div class="flex-1 p-5 md:p-6 text-left flex flex-col gap-2">
                         <h3 class="text-black group-hover:text-white font-medium mb-2 leading-tight">
                             Industrial valuations</h3>
                         <p class="text-gray-900 group-hover:text-white/90 text-sm">Industrial
                             equipment, energy installations, production plants.</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
+                        <a class="absolute right-4 bottom-3" href="services.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                height="20" class="absolute right-4 bottom-3 stroke-pink-800 group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </a>
 
 
                     </div>
@@ -380,9 +383,9 @@
                         <p class="text-slate-700">Our work has consistently met the stringent quality standards of big
                             brands and critical public institutions.
                         </p>
-                        <a href="clients.html"
+                        <a href="services.html"
                             class="group flex gap-1 items-center font-medium text-sm tracking-wide hover:text-pink-700 duration-300 mt-5 text-pink-700">
-                            Who we serve
+                            Our Services
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
                                 role="img"
                                 class="size-4 stroke-pink-700 group-hover:translate-x-2 transition-all duration-300">
@@ -402,7 +405,7 @@
             <div class="w-full relative z-20 bg-slate-900 overflow-hidden">
                 <!-- Background Image -->
                 <div class="absolute inset-0 z-0">
-                    <img src="./static/images/stats-bg.png" alt="Nairobi Skyline"
+                    <img src="./static/images/stats-bg.jpg" alt="Nairobi Skyline"
                         class="w-full h-full object-cover opacity-60">
                     <div class="absolute inset-0 bg-violet-800/80 mix-blend-multiply"></div>
                 </div>
@@ -485,8 +488,6 @@
                             <ul class="mt-4 space-y-3">
                                 <li><a href="about_us.html" class="text-sm text-gray-300 hover:text-white">About
                                         Us</a></li>
-                                <li><a href="clients.html" class="text-sm text-gray-300 hover:text-white">Our
-                                        Clients</a></li>
                                 <li><a href="contact_us.html" class="text-sm text-gray-300 hover:text-white">Contact
                                         Us</a></li>
                             </ul>
