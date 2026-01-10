@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients — SEC & M Valuers</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <!-- cli-generated tailwind 4.x -->
+    <link rel="stylesheet" href="./static/css/global.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="main-nav"
+        class="fixed top-0 left-0 w-full z-60 transition-[background-color,color,box-shadow] duration-300 ease-in-out bg-white text-slate-900 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-3 tracking-wide">
+                <div class="shrink-0">
+                    <a href="index.html" class="p-2 bg-white inline-flex">
+                        <!-- Logo: Managed by JS -->
+                        <img id="nav-logo" src="./static/images/secmlogo.jpg" alt="SEC & M Valuers"
+                            class="h-10 md:h-12 w-auto transition-opacity duration-300">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8 text-[12px] tracking-wide">
+                        <a href="index.html"
+                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors text-brand-orange-light border-b-2 border-b-brand-orange-dark">SEC & M. CO. LTD.</a>
+                        <a href="about_us.html"
+                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">ABOUT
+                            US</a>
+                        <a href="services.html"
+                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors text-brand-orange-light border-b-2 border-b-brand-orange-dark">SERVICES</a>
+                        <a href="clients.html"
+                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">CLIENTS</a>
+                        <a id="nav-cta" href="contact_us.html"
+                            class="flex items-center gap-2 px-3 py-3 text-slate-900 font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
+                            <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                viewBox="0 0 24 24" stroke-width="0.25" stroke="currentColor">
+                                <path
+                                    d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z" />
+                            </svg>
+                            GET IN TOUCH</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button"
+                    class="flex md:hidden p-2 rounded-md focus:outline-none text-slate-900 transition-colors duration-300"
+                    aria-label="Open menu">
+                    <svg id="hamburger-icon" class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24">
+                        <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                        <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-sm border-t border-slate-700">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html"
+                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SEC
+                    & M.</a>
+                <a href="about_us.html"
+                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">ABOUT US</a>
+                <a href="services.html"
+                    class="block py-2 text-brand-orange-light font-medium border-l-2 border-brand-orange-dark pl-3">SERVICES</a>
+                <a href="clients.html"
+                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">CLIENTS</a>
+                <a href="contact_us.html"
+                    class="flex items-center gap-2 py-3 mt-4 text-white font-medium bg-pink-700 px-4 rounded">
+                    <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z" />
+                    </svg>
+                    GET IN TOUCH
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-16 bg-white text-slate-900">
+        <section class="relative overflow-hidden bg-slate-900">
+            <div class="absolute inset-0">
+                <img src="./static/images/nairobi-skyline.jpg" alt="Clients Hero"
+                    class="w-full h-full object-cover opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-br from-indigo-950/80 via-indigo-900/70 to-pink-700/45 mix-blend-multiply">
+                </div>
+            </div>
+            <div class="relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-20 lg:py-24 text-center text-white">
+                <p class="text-sm uppercase tracking-[0.3em] text-indigo-100/90 mb-5">Our Clients</p>
+                <h1 class="text-3xl sm:text-2xl lg:text-4xl font-serif font-bold leading-tight">Trusted by public and private organisations</h1>
+                <p class="mt-6 text-lg text-indigo-100/90 max-w-2xl mx-auto">A representative selection of clients appears across our About Us page; contact us for a tailored list for procurement or reference checks.</p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+                <h2 class="text-2xl font-serif font-bold text-slate-900 mb-6">Client categories</h2>
+                <p class="text-slate-700">(Navigation and footer copied from Services page.)</p>
+            </div>
+        </section>
+    </main>
+            <!-- Our Clients -->
+        <section class="px-6 sm:px-8 lg:px-12 py-20 bg-slate-50">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                <div class="lg:col-span-7 space-y-10">
+                    <div class="space-y-10">
+                        <!-- Banks & SACCOs -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Banks & SACCOs
+                            </h3>
+                            <p class="text-lg font-semibold text-slate-900">Independent collateral and portfolio
+                                valuations for prudent, well‑secured lending.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                We work with commercial banks and SACCOs to value security for new lending,
+                                restructuring and recovery, providing consistent, regulator‑aligned reports that credit
+                                committees and risk teams can rely on across thousands of accounts.
+                            </p>
+                            <p>Some of our clients in this segment include:</p>
+                            <ol class="list list-decimal list-inside space-y-2">
+                                <li>Absa Bank Kenya PLC formerly Barclays Bank of Kenya Limited (BBK)</li>
+                                <li>Central Bank of Kenya</li>
+                                <li>Kenya Commercial Bank (KCB)</li>
+                                <li>Equity Bank Limited</li>
+                                <li>Housing Finance of Kenya (HFCK)</li>
+                                <li>Bank of Africa Kenya Limited</li>
+                                <li>First Community Bank Limited</li>
+                                <li>Kenya Post Office Savings Bank (Post Bank)</li>
+                                <li>Ecobank</li>
+                                <li>Co-operative Bank of Kenya Limited</li>
+                                <li>Capital Markets Authority</li>
+                                <li>CPF Financial Services</li>
+                                <li>Consolidated Bank of Kenya</li>
+                                <li>Industrial Development Bank (IDB) Agricultural Finance Corporation (AFC)</li>
+                                <li>Tourism Finance Corporation</li>
+                                <li>Kenya Industrial Estates etc</li>
+                                <li>United Nations Sacco Society Limited (UNSACCO)</li>
+                                <li>Stima Sacco Society Limited</li>
+                                <li>Mwalimu Sacco Society</li>
+                                <li>Taifa Sacco Society Limited</li>
+                                <li>Micro Enterprises Support Programme Trust (MESPT)</li>
+                                <li>Wanandege Housing Co-operative Society Limited</li>
+                                <li>Vision Sacco</li>
+                                <li>Imarika Sacco</li>
+                                <li>Ardhi Sacco Society Limited</li>
+                                <li>Finnlem Sacco Society; Kiambu Unity Finance Co-operative Union</li>
+                                <li>Waumini Sacco Society</li>
+                                <li>Stima Investment Co-operative Society Ltd</li>
+                                <li>The Sacco Societies Regulatory Authority (SASRA)</li>
+                                <li>Ukulima Co-operative Savings and Credit Society Ltd</li>
+                                <li>Five Star Limited; All Saints Cathedral Church</li>
+                                <li>Local Authorities Provident Fund (LAPF)</li>
+                                <li>Meru South Farmers Sacco Society Limited</li>
+                                <li>Unaitas Sacco.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Insurance Companies -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Insurance
+                                Companies</h3>
+                            <p class="text-lg font-semibold text-slate-900">Reinstatement and market values that stand
+                                up to internal audit, reinsurers and claims review.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                For underwriters and loss adjusters, we determine sums insured and asset schedules for
+                                estates, industrial plants and specialist equipment, helping balance adequate cover with
+                                sustainable premium levels and faster, evidence‑based claims settlement.
+                            </p>
+                            <p>Some of our clients in this segment include</p>
+                            <ol class="list list-decimal list-inside space-y-2 text-sm">
+                                <li>Alexander Forbes</li>
+                                <li>Pacis Insurance Company</li>
+                                <li>Old Mutual among others</li>
+                                <li>Export Promotion Council (epc)</li>
+                                <li>African Population and Health Research Centre (APHRC)</li>
+                                <li>African Medical and Research Foundation (AMREF)</li>
+                                <li>EastAfrica Baptist Registered Trustees</li>
+                            </ol>
+                        </div>
+
+                        <!-- Developers & Realty Investors -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Developers
+                                &amp;
+                                Realty Investors</h3>
+                            <p class="text-lg font-semibold text-slate-900">Market‑grounded insight from feasibility,
+                                through delivery, to exit.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                We partner with local and international developers, REIT sponsors and private investors
+                                to test assumptions, price schemes and evaluate acquisitions, bringing together
+                                valuation expertise, feasibility analysis and on‑the‑ground market intelligence.
+                            </p>
+                        </div>
+
+                        <!-- Government & NGOs -->
+                        <div class="space-y-6">
+                            <h3 class=" font-semibold tracking-[0.32em] text-indigo-700 uppercase">Government</h3>
+                            <p class="text-lg font-semibold text-slate-900">Transparent, audit‑ready valuations for
+                                public assets.</p>
+                            <p class="md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                We support national and county governments, regulators and development partners with
+                                large‑scale asset registers, portfolio reviews and infrastructure valuation,
+                                underpinning
+                                IFRS reporting, PPP structuring and programme accountability.
+                            </p>
+                            <p class="text-sm">Some of our clients in this category include:</p>
+                            <ol class="list list-decimal list-inside space-y-2 text-sm">
+                                <li>Kenya Pipeline Company Limited (KPC)</li>
+                                <li>Kenya Seed Company Limited</li>
+                                <li>National Industrial Training Authority (NITA)</li>
+                                <li>Pyrethrum Board of Kenya (PBK)</li>
+                                <li>National Cereals and Produce Board (NCPB)</li>
+                                <li>Kenya Trade Network Agency (KenTrade)</li>
+                                <li>Kenya Literature Bureau</li>
+                                <li>Catering and Tourism Development Levy Trustee (CTDLT)</li>
+                                <li>Kenya Broadcasting Corporation (KBC)</li>
+                                <li>Coffee Board of Kenya</li>
+                                <li>Kenya Institute of Administration(KIA)</li>
+                                <li>Kenya Investment Authority (KenInvest)</li>
+                                <li>Kenya Medical Research Institute</li>
+                                <li>Kenya Police Sacco</li>
+                                <li>Kenya Reinsurance Corporation Ltd</li>
+                                <li>Kenya Railways</li>
+                                <li>Kenya Civil Aviation Authority (KCCA)</li>
+                                <li>Kenya Coconut Development Authority</li>
+                                <li>Industrial & Commercial Development Corporation (ICDC)</li>
+                                <li>Kenya Agricultural Research Institute (KARI),Kenya Airports Authority</li>
+                                <li>Export Processing Zone (EPZ)</li>
+                                <li>Kenya National Examination Council (KNEC)</li>
+                                <li>Athi Water Services Board</li>
+                                <li>Coffee Development Fund</li>
+                                <li>Githunguri Dairy Farmers Cooperative Society (Fresha)</li>
+                                <li>Harambee Co-operative Savings & Credit Society Limited</li>
+                                <li>Kenya Film Classification Board</li>
+                                <li>Kenya Institute for Public Policy Research and Analysis (KIPPRA)</li>
+                                <li>Association of Local Government Authorities of Kenya (ALGAK)</li>
+                                <li>Kenya National Assurance Company (2001) Ltd</li>
+                                <li>Kenya National Bureau of Statistics (KNBS)</li>
+                                <li>Kenya National Trading Corporation Limited (KNTC)</li>
+                                <li>Kenya Industrial Property institute (KIPI)</li>
+                                <li>National Coordinating Agency for Population and Development (NCAPD)</li>
+                                <li>Nairobi City Water & Sewerage Company Ltd.(NCWSC)</li>
+                                <li>National Construction Authority</li>
+                                <li>National Housing Corporation</li>
+                                <li>National Museum of Kenya</li>
+                                <li>National Oil Corporation of Kenya</li>
+                                <li>National Water Conversation & Pipeline Corporation</li>
+                                <li>New Kenya Co-operative Creameries Limited (NKCC) etc.</li>
+                            </ol>
+                        </div>
+
+                        <!-- County Governments and former local authorities -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">County Governments and former local authorities</h3>
+                            <p class="text-lg font-semibold text-slate-900">Asset registers, valuation and legacy asset advisory for devolved administrations.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">We work with county governments and former local authorities on asset inventories, IFRS and transfer valuations, and disposal or repurposing of legacy assets.</p>
+                            <p class="text-sm">Some of our clients in this segment include:</p>
+                            <ol class="list list-decimal list-inside space-y-2 text-sm">
+                                <li>Nairobi County Government</li>
+                                <li>Mombasa County Government</li>
+                                <li>Nakuru County Government</li>
+                                <li>Various former local authorities</li>
+                            </ol>
+                        </div>
+
+                        <!-- Individual Property Owners -->
+                        <div class="space-y-2">
+                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Individual
+                                Property Owners</h3>
+                            <p class="text-lg font-semibold text-slate-900">Clear guidance for high‑stakes personal
+                                and family decisions.</p>
+                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
+                                From single homes to diversified personal portfolios, we assist owners with valuations
+                                for sale, purchase, refinancing, succession and matrimonial or estate planning, turning
+                                complex technical work into practical advice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-xl shadow-slate-900/10 bg-slate-900/80 flex items-end justify-start min-h-[260px] lg:min-h-[380px]">
+
+                        <div
+                            class="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-900/40 to-transparent mix-blend-multiply">
+                            <img src="./static/images/nairobi-skyline.jpg" alt="Nairobi skyline"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-8 py-2">
+                <div class="flex flex-col gap-6 md:gap-12 justify-between xl:col-span-1">
+                    <div class="bg-white p-2.5 w-fit">
+                        <img class="inline h-16" src="./static/images/secmlogo.jpg" alt="RICS Certified Company"
+                            title="RICS Certified Company">
+                    </div>
+                    <p class="text-lg md:text-xl w-full max-w-xs text-slate-200 font-extrabold">SEC &amp; M. Company
+                        Limited</p>
+                    <p class="w-full max-w-xs text-slate-200">
+                        Registered Valuers, Management &amp; Real Estate Consultants
+                    </p>
+                    <div class="flex">
+                        <img class="inline-flex h-12 opacity-50" src="./static/images/rics_logo.svg" alt="RICS Logo">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Services</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li><a href="services.html" class="text-sm text-gray-300 hover:text-white">Commercial
+                                        Valuation</a></li>
+                                <li><a href="services.html" class="text-sm text-gray-300 hover:text-white">Plant &amp;
+                                        Machinery</a></li>
+                                <li><a href="services.html" class="text-sm text-gray-300 hover:text-white">Residential
+                                        Valuation</a></li>
+                                <li><a href="services.html" class="text-sm text-gray-300 hover:text-white">Special
+                                        Properties</a></li>
+                                <li><a href="services.html"
+                                        class="text-sm text-gray-300 hover:text-white">Consultancy</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li><a href="about_us.html" class="text-sm text-gray-300 hover:text-white">About
+                                        Us</a></li>
+                                <li><a href="contact_us.html" class="text-sm text-gray-300 hover:text-white">Contact
+                                        Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start">
+                                    <svg class="shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="ml-3 text-sm text-gray-300">Woodland Business Park, Upper Hill,
+                                        Nairobi</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                        data-name="Layer 1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 13.78V24h-.89C10.38 24 0 13.62 0 .89V0h10.22v9.2l-4.31 4.31c1.42 1.91 3.13 3.58 5.11 4.93l4.67-4.67H24M8.45 8.47V1.78H1.8C1.96 5.52 3.07 9 4.91 12l3.53-3.53Zm7.97 7.08-3.87 3.87c2.87 1.64 6.15 2.64 9.67 2.78v-6.65h-5.8Z"
+                                            style="stroke-width:0" />
+                                    </svg>
+                                    <span class="ml-3 text-sm text-gray-300">(254) 725 969 290</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="shrink-0 h-6 w-6 text-gray-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span class="ml-3 text-sm text-gray-300">valuations@secmvaluations.com</span>
+                                </li>
+                            </ul>
+                            <div class="flex space-x-4 mt-8">
+                                <!-- Social Links (Placeholders) -->
+                                <a href="#" class="text-gray-400 hover:text-white">
+                                    <span class="sr-only">Facebook</span>
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-white">
+                                    <span class="sr-only">Twitter</span>
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-950/60 border-t border-slate-800 mx-auto py-5 px-4 sm:px-6 lg:px-8">
+            <p class="text-sm text-gray-500 xs:text-center">
+                © 2025 SECM Valuers Co. Ltd. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./static/js/nav.js"></script>
+    <script src="./static/js/animations.js"></script>
+</body>
+
+</html>

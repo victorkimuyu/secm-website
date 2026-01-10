@@ -17,10 +17,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between py-3 tracking-wide">
                 <div class="shrink-0">
-                    <a href="index.html">
+                    <a href="index.html" class="p-2 bg-white inline-flex">
                         <!-- Logo: Managed by JS -->
-                        <img id="nav-logo" src="./static/images/secm-logo-color.svg" alt="SEC & M. Valuers"
-                            class="h-6 md:h-8 w-auto transition-opacity duration-300">
+                        <img id="nav-logo" src="./static/images/secmlogo.jpg" alt="SEC & M Valuers"
+                            class="h-10 md:h-12 w-auto transition-opacity duration-300">
                     </a>
                 </div>
 
@@ -28,13 +28,14 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-8 text-[12px] tracking-wider">
                         <a href="index.html"
-                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SEC
-                            & M.</a>
+                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors text-brand-orange-light border-b-2 border-b-brand-orange-dark">SEC & M. CO. LTD.</a>
                         <a href="about_us.html"
                             class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors text-brand-orange-light border-b-2 border-b-brand-orange-dark">ABOUT
                             US</a>
                         <a href="services.html"
                             class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">SERVICES</a>
+                        <a href="clients.html"
+                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors">CLIENTS</a>
                         <a id="nav-cta" href="contact_us.html"
                             class="flex items-center gap-2 px-3 py-3 text-slate-900 font-medium tracking-wide hover:bg-pink-600 hover:text-white transition-colors">
                             <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
@@ -64,13 +65,14 @@
         <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-sm border-t border-slate-700">
             <div class="px-4 py-6 space-y-4">
                 <a href="index.html"
-                    class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SEC
-                    & M.</a>
+                            class="py-1 font-medium tracking-wide hover:text-brand-orange-light transition-colors text-brand-orange-light border-b-2 border-b-brand-orange-dark">SEC & M. CO. LTD.</a>
                 <a href="about_us.html"
                     class="block py-2 text-brand-orange-light font-medium border-l-2 border-brand-orange-dark pl-3">ABOUT
                     US</a>
                 <a href="services.html"
                     class="block py-2 text-white hover:text-brand-orange-light transition-colors pl-3">SERVICES</a>
+                    <a href="clients.html"
+                    class="block py-2 text-brand-orange-light font-medium border-l-2 border-brand-orange-dark pl-3">CLIENTS</a>
                 <a href="contact_us.html"
                     class="flex items-center gap-2 py-3 mt-4 text-white font-medium bg-pink-700 px-4 rounded">
                     <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -93,7 +95,7 @@
                     class="absolute inset-0 bg-gradient-to-br from-indigo-950/85 via-indigo-900 to-indigo-700/10 mix-blend-multiply">
                 </div>
             </div>
-            <div class="relative max-w-6xl mx-auto py-20 lg:py-24">
+            <!-- <div class="relative max-w-6xl mx-auto py-20 lg:py-24">
                 <p class="text-sm uppercase tracking-[0.3em] text-indigo-100/90 mb-4">OUR STORY</p>
                 <h1 class="text-3xl md:text-4xl lg:text-4xl font-serif font-bold text-white leading-tight">Pairing
                     integrity with competence
@@ -102,25 +104,62 @@
                     Over two decades of growth, grounded in independence, integrity, and globally benchmarked
                     professional standards.
                 </p>
+            </div> -->
+        </section>
+                <!-- Core Values -->
+        <section class="flex gap-6">
+            <div class="space-y-5">
+                <h3 class="text-xl font-bold">Our vision</h3>
+                <p class="text-base leading-relaxed">To be the preffered complex Valuations Services Provider in Africa and beyond</p>
+            </div>
+            <div class="space-y-5">
+                <h3>Our Mission</h3>
+                <p class="text-base leading-relaxed">To offer unbiased, reliable and credible valuations in order to be the preffered Valuations Services Provider in Africa</p>
             </div>
         </section>
+        <section class="py-16 bg-slate-900 text-white">
+            <div class="mx-auto w-full md:max-w-7xl px-6 sm:px-8 lg:px-10 relative z-10">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-serif font-bold mb-3">Core Values</h2>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="col-span-2 lg:col-span-1">
+                        <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Integrity
+                        </div>
+                        <p class="text-slate-300">We uphold the highest ethical standards and maintain transparency in all our dealings.</p>
+                    </div>
+                    <div class="col-span-2 lg:col-span-1">
+                        <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Competence
+                        </div>
+                        <p class="text-slate-300">Every valuation is handled by competent professionals and backed by rigorous analysis</p>
+                    </div>
+                    <div class="col-span-2 lg:col-span-1">
+                        <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Confidentiality
+                        </div>
+                        <p class="text-slate-300">Client information is handled with utmost care.</p>
+                    </div>
+                    <div class="col-span-2 lg:col-span-1">
+                        <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Professionalism</div>
+                        <p class="text-slate-300">We adhere to global valuation standards (RICS Valuation - Global Standards 2025 / Red Book, IVS 2025, IFRS, IPSAS).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Company Overview -->
         <section class="py-20 bg-white border-b border-slate-200">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div>
-                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-8">
-                            A Legacy Built on Trust and Expertise
+                        <h2 class="text-3xl font-serif font-bold text-slate-900 mb-8">
+                            Competence | Service | Solution
                         </h2>
                         <div class="space-y-5 text-base md:text-lg text-slate-700 leading-relaxed">
-                            <p>
-                                Established in 2003, SEC & M Valuers has grown into a premier
-                                Kenyan-owned property consulting firm. With over 20 years of active presence in the
-                                real estate industry, we have established ourselves as the benchmark for professional
-                                asset valuation and management.
-                            </p>
-                            <p>
+                            <p class="m_bottom_15">Sec &amp; M Co. Ltd is a Kenyan-based assets valuation firm with an outstanding depth of knowledge in valuation services, having over 20 years active presence in the Real Estate Industry with registered offices in Nairobi, Kenya. The firm has brought together a group of experts who have gained vast experience in complex assets valuations, feasibility studies and management consultancy services in Kenya. The firm is 100% locally owned.  </p>
+
+                            <p>With a breadth of experience advising government, businesses and institutions across a wide variety of industry segments, Sec &amp; M Co. Limited is ideally placed to solve your complex valuation needs. Sec &amp; M Co. Limited reputation is built on experience, integrity, thoroughness and our ability to meet each project on time and on budget.  </p>
                                 Headquartered in Nairobi with strategic regional offices in Mombasa and Nakuru, we serve
                                 a diverse portfolio of clients, from major financial institutions and public sector
                                 entities to international NGOs and private investors.
@@ -131,10 +170,8 @@
                                     Kenya (ISK)</strong>, ensuring every engagement adheres to the highest global
                                 standards.
                             </p>
-                            <p>Our growing portfolio of clients includes major financial institutions, public sector
-                                entities, international NGOs, and private investors.</p>
+                            <p>In accordance to the provision of the Valuers Act (Cap 532) and Estate Agents Act (Cap 533) Laws of Kenya, we have a professional Indemnity cover from Pacis Insurance Co. Ltd. of One Billion Kenya Shillings.</p>
                         </div>
-
                     </div>
                     <div class="relative">
                         <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl shadow-slate-900/10">
@@ -151,198 +188,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Our Clients -->
-        <section class="px-6 sm:px-8 lg:px-12 py-20 bg-slate-50">
-            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-                <div class="lg:col-span-7 space-y-10">
-                    <div>
-                        <span class="text-pink-700 font-semibold tracking-[0.28em] text-xs uppercase mb-4 block">Our
-                            Clients</span>
-                        <h2
-                            class="text-3xl md:text-4xl lg:text-4xl font-serif font-bold text-slate-900 leading-tight max-w-[600px] mb-10">
-                            Deep experience across institutional and private client segments
-                        </h2>
-                        <p class="mt-4 text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed mb-20">
-                            We act for lenders, insurers, developers, public bodies and private owners whose decisions
-                            depend on valuations that are independent, transparent and grounded in real market evidence.
-                        </p>
-                    </div>
-
-                    <div class="space-y-10">
-                        <!-- Banks & SACCOs -->
-                        <div class="space-y-2">
-                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Banks & SACCOs
-                            </h3>
-                            <p class="text-lg font-semibold text-slate-900">Independent collateral and portfolio
-                                valuations for prudent, well‑secured lending.</p>
-                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
-                                We work with commercial banks and SACCOs to value security for new lending,
-                                restructuring and recovery, providing consistent, regulator‑aligned reports that credit
-                                committees and risk teams can rely on across thousands of accounts.
-                            </p>
-                            <p>Some of our clients in this segment include:</p>
-                            <ol>
-                                <li>Absa Bank Kenya PLC formerly Barclays Bank of Kenya Limited (BBK)</li>
-                                <li>Central Bank of Kenya</li>
-                                <li>Kenya Commercial Bank (KCB)</li>
-                                <li>Equity Bank Limited</li>
-                                <li>Housing Finance of Kenya (HFCK)</li>
-                                <li>Bank of Africa Kenya Limited</li>
-                                <li>First Community Bank Limited</li>
-                                <li>Kenya Post Office Savings Bank (Post Bank)</li>
-                                <li>Ecobank</li>
-                                <li>Co-operative Bank of Kenya Limited</li>
-                                <li>Capital Markets Authority</li>
-                                <li>CPF Financial Services</li>
-                                <li>Consolidated Bank of Kenya</li>
-                                <li>Industrial Development Bank (IDB) Agricultural Finance Corporation (AFC)</li>
-                                <li>Tourism Finance Corporation</li>
-                                <li>Kenya Industrial Estates etc</li>
-                                <li>United Nations Sacco Society Limited (UNSACCO)</li>
-                                <li>Stima Sacco Society Limited</li>
-                                <li>Mwalimu Sacco Society</li>
-                                <li>Taifa Sacco Society Limited</li>
-                                <li>Micro Enterprises Support Programme Trust (MESPT)</li>
-                                <li>Wanandege Housing Co-operative Society Limited</li>
-                                <li>Vision Sacco</li>
-                                <li>Imarika Sacco</li>
-                                <li>Ardhi Sacco Society Limited</li>
-                                <li>Finnlem Sacco Society; Kiambu Unity Finance Co-operative Union</li>
-                                <li>Waumini Sacco Society</li>
-                                <li>Stima Investment Co-operative Society Ltd</li>
-                                <li>The Sacco Societies Regulatory Authority (SASRA)</li>
-                                <li>Ukulima Co-operative Savings and Credit Society Ltd</li>
-                                <li>Five Star Limited; All Saints Cathedral Church</li>
-                                <li>Local Authorities Provident Fund (LAPF)</li>
-                                <li>Meru South Farmers Sacco Society Limited</li>
-                                <li>Unaitas Sacco.</li>
-                            </ol>
-                        </div>
-
-                        <!-- Insurance Companies -->
-                        <div class="space-y-2">
-                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Insurance
-                                Companies</h3>
-                            <p class="text-lg font-semibold text-slate-900">Reinstatement and market values that stand
-                                up to internal audit, reinsurers and claims review.</p>
-                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
-                                For underwriters and loss adjusters, we determine sums insured and asset schedules for
-                                estates, industrial plants and specialist equipment, helping balance adequate cover with
-                                sustainable premium levels and faster, evidence‑based claims settlement.
-                            </p>
-                            <p>Some of our clients in this segment include</p>
-                            <ol>
-                                <li>Alexander Forbes</li>
-                                <li>Pacis Insurance Company</li>
-                                <li>Old Mutual among others</li>
-                                <li>Export Promotion Council (epc)</li>
-                                <li>African Population and Health Research Centre (APHRC)</li>
-                                <li>African Medical and Research Foundation (AMREF)</li>
-                                <li>EastAfrica Baptist Registered Trustees</li>
-                            </ol>
-                        </div>
-
-                        <!-- Developers & Realty Investors -->
-                        <div class="space-y-2">
-                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Developers
-                                &amp;
-                                Realty Investors</h3>
-                            <p class="text-lg font-semibold text-slate-900">Market‑grounded insight from feasibility,
-                                through delivery, to exit.</p>
-                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
-                                We partner with local and international developers, REIT sponsors and private investors
-                                to test assumptions, price schemes and evaluate acquisitions, bringing together
-                                valuation expertise, feasibility analysis and on‑the‑ground market intelligence.
-                            </p>
-                        </div>
-
-                        <!-- Government & NGOs -->
-                        <div class="space-y-2">
-                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Government
-                                &amp;
-                                NGOs</h3>
-                            <p class="text-lg font-semibold text-slate-900">Transparent, audit‑ready valuations for
-                                public and donor‑funded assets.</p>
-                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
-                                We support national and county governments, regulators and development partners with
-                                large‑scale asset registers, portfolio reviews and infrastructure valuation,
-                                underpinning
-                                IFRS reporting, PPP structuring and programme accountability.
-                            </p>
-                            <p>Some of our clients in this category include:</p>
-                            <ol>
-                                <li>Kenya Pipeline Company Limited (KPC)</li>
-                                <li>Kenya Seed Company Limited</li>
-                                <li>National Industrial Training Authority (NITA)</li>
-                                <li>Pyrethrum Board of Kenya (PBK)</li>
-                                <li>National Cereals and Produce Board (NCPB)</li>
-                                <li>Kenya Trade Network Agency (KenTrade)</li>
-                                <li>Kenya Literature Bureau</li>
-                                <li>Catering and Tourism Development Levy Trustee (CTDLT)</li>
-                                <li>Kenya Broadcasting Corporation (KBC)</li>
-                                <li>Coffee Board of Kenya</li>
-                                <li>Kenya Institute of Administration(KIA)</li>
-                                <li>Kenya Investment Authority (KenInvest)</li>
-                                <li>Kenya Medical Research Institute</li>
-                                <li>Kenya Police Sacco</li>
-                                <li>Kenya Reinsurance Corporation Ltd</li>
-                                <li>Kenya Railways</li>
-                                <li>Kenya Civil Aviation Authority (KCCA)</li>
-                                <li>Kenya Coconut Development Authority</li>
-                                <li>Industrial& Commercial Development Corporation (ICDC)</li>
-                                <li>Kenya Agricultural Research Institute (KARI),Kenya Airports Authority</li>
-                                <li>Export Processing Zone (EPZ)</li>
-                                <li>Kenya National Examination Council (KNEC)</li>
-                                <li>Athi Water Services Board</li>
-                                <li>Coffee Development Fund</li>
-                                <li>Githunguri Dairy Farmers Cooperative Society (Fresha)</li>
-                                <li>Harambee Co-operative Savings & Credit Society Limited</li>
-                                <li>Kenya Film Classification Board</li>
-                                <li>Kenya Institute for Public Policy Research and Analysis (KIPPRA)</li>
-                                <li>Association of Local Government Authorities of Kenya (ALGAK)</li>
-                                <li>Kenya National Assurance Company (2001) Ltd</li>
-                                <li>Kenya National Bureau of Statistics (KNBS)</li>
-                                <li>Kenya National Trading Corporation Limited (KNTC)</li>
-                                Kenya Industrial Property institute (KIPI)
-                                <li>National Coordinating Agency for Population and Development (NCAPD)</li>
-                                <li>Nairobi City Water & Sewerage Company Ltd.(NCWSC)</li>
-                                <li>National Construction Authority</li>
-                                <li>National Housing Corporation</li>
-                                <li>National Museum of Kenya</li>
-                                <li>National Oil Corporation of Kenya</li>
-                                <li>National Water Conversation & Pipeline Corporation</li>
-                                <li>New Kenya Co-operative Creameries Limited (NKCC) etc.</li>
-                            </ol>
-                        </div>
-
-                        <!-- Individual Property Owners -->
-                        <div class="space-y-2">
-                            <h3 class="text-sm font-semibold tracking-[0.32em] text-indigo-700 uppercase">Individual
-                                Property Owners</h3>
-                            <p class="text-lg font-semibold text-slate-900">Clear guidance for high‑stakes personal
-                                and family decisions.</p>
-                            <p class="text-sm md:text-base text-slate-700 max-w-2xl leading-relaxed">
-                                From single homes to diversified personal portfolios, we assist owners with valuations
-                                for sale, purchase, refinancing, succession and matrimonial or estate planning, turning
-                                complex technical work into practical advice.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-5">
-                    <div
-                        class="relative rounded-3xl overflow-hidden shadow-xl shadow-slate-900/10 bg-slate-900/80 flex items-end justify-start min-h-[260px] lg:min-h-[380px]">
-
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/40 to-transparent mix-blend-multiply">
-                            <img src="./static/images/nairobi-skyline.jpg" alt="Nairobi skyline"
-                                class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
         </section>
 
         <!-- Core Values -->
@@ -371,9 +216,9 @@
                         <p class="text-slate-300">Ever On-time and within-budget delivery of reports.</p>
                     </div>
                     <div class="col-span-2 lg:col-span-1">
-                        <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Innovation
+                        <div class="text-brand-orange-light font-bold text-sm tracking-widest mb-2 uppercase">Professionalism
                         </div>
-                        <p class="text-slate-300">Application of current methods and international standards.
+                        <p class="text-slate-300">We are ahere to global valuation standards (IVS, IFRS,  IPSAS).
                         </p>
                     </div>
                 </div>
@@ -486,8 +331,9 @@
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-8 py-2">
                 <div class="flex flex-col gap-6 md:gap-12 justify-between xl:col-span-1">
-                    <div>
-                        <img class="inline h-10" src="./static/images/secm-logo-white.svg" alt="RICS Certified Company">
+                    <div class="bg-white p-2.5 w-fit">
+                        <img class="inline h-16" src="./static/images/secmlogo.jpg" alt="RICS Certified Company"
+                            title="RICS Certified Company">
                     </div>
                     <p class="text-lg md:text-xl w-full max-w-xs text-slate-200 font-extrabold">SEC &amp; M. Company
                         Limited</p>

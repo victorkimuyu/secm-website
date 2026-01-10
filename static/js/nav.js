@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuIconClose = document.getElementById('menu-icon-close');
 
     // Logo Paths
-    const logoWhite = './static/images/secm-logo-white.svg';
-    const logoColor = './static/images/secm-logo-color.svg';
+    const logoWhite = './static/images/secmlogo.jpg';
+    const logoColor = './static/images/secmlogo.jpg';
 
     // Helper: Close mobile menu
     const closeMobileMenu = () => {
